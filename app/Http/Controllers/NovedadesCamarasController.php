@@ -65,6 +65,7 @@ class NovedadesCamarasController extends Controller
     {
         $novedad_camaras = novedad_camaras::find($id);
         return view("Camaras/4_eliminar_novedad", compact('novedad_camaras'));
+        
 
     }
 

@@ -27,6 +27,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
 
 
         <style>
@@ -66,11 +68,7 @@
 
                 }
 
-                #img-portada{
-                    width: 100%;
-                    height: 60%;
 
-                }
 
                 #div_presentacion{
                     position: absolute;
@@ -78,6 +76,183 @@
                     margin-left: 5%;
                     color: white;
                 }
+
+
+
+                #txt_subtitulo{
+                    color: white;
+                    font-size: 30px;
+                    margin-top: -10px;
+                }
+
+
+                #img-portada{
+                    width: 102%;
+                    height: 100%;
+                    margin-left: center;
+                }
+
+
+                
+
+
+
+
+            @media (max-width: 600px) { /* Ajusta el tamaño del texto para pantallas pequeñas */ 
+
+                #img-portada{
+                    width: 450%;
+                    height: 100%;
+                    margin-left: -250%;
+                    opacity: 0.8;
+                }
+                #contenedor-texto-1{
+                    background-color: ;
+                    margin-top: -90%;
+                    margin-left: 5%;
+                    width: auto;
+                } 
+
+                #txt_titulo{
+                    font-size: 10vw;
+                    color: white;
+                    font-family: cooper hewitt heavy;
+                    font-weight: 900; 
+                   
+                }
+
+                #contenedor-texto-3{
+                    background-color: ;
+                    margin-top: -30%;
+                    margin-left: -95%;
+                                        
+                }
+
+                #logo-potada-text{
+                    width: 25%;
+                    margin-top: -70%;
+                    margin-left: 60%;
+                    
+
+                }
+                #contenedor-texto-2 { 
+                    font-size: 1vw; 
+                } 
+            } 
+
+
+
+
+            @media (min-width: 601px) and (max-width: 1200px) { /* Ajusta el tamaño del texto para pantallas medianas */ 
+                #contenedor-texto-1{
+                    background-color: ;
+                    margin-top: -50%;
+                    margin-left: -20%;
+                    width: auto;
+                } 
+
+                #txt_titulo{
+                    font-size: 4vw;
+                    color: white;
+                    font-family: cooper hewitt heavy;
+                    font-weight: 900; 
+                   
+                }
+
+                #contenedor-texto-3{
+                    background-color: ;
+                    margin-top: -30%;
+                    margin-left: -95%;
+                                        
+                }
+
+                #logo-potada-text{
+                    width: 15%;
+                    margin-left: 23%;
+                    margin-top: -3%;
+
+                }
+
+                #contenedor-texto-2 { 
+                    font-size: 1vw; 
+                } 
+            } 
+
+
+            @media (min-width: 1201px) { /* Ajusta el tamaño del texto para pantallas grandes */ 
+                #contenedor-texto-1{
+                    background-color: ;
+                    margin-top: -60%;
+                    margin-left: -20%;
+                    width: auto;
+                    -webkit-text-stroke-width: 2px;
+                    -webkit-text-stroke-color: black;
+                } 
+
+                #txt_titulo{
+                    font-size: 4vw;
+                    color: white;
+                    font-family: cooper hewitt heavy;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: black;
+                   
+                }
+
+                #contenedor-texto-2 { 
+                    font-size: 2vw; 
+                    background-color: ;
+                    margin-left: -20%;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: black;
+
+                }
+                
+                #contenedor-texto-3{
+                    background-color: ;
+                    margin-top: -30%;
+                    margin-left: -95%;
+                                        
+                }
+
+                #logo-potada-text{
+                    width: 15%;
+                    margin-left: 23%;
+                    margin-top: -3%;
+
+                }
+
+            }
+
+
+            @media (min-width: 1400px) and (max-width: 1676px) {
+                #container_1{
+                    background-color: red;
+                    color: red;
+                }
+
+                #contenedor-texto-1{ /* Nombre Cootragal */ 
+                    margin-top: -50%;
+                    margin-left: -10%;
+                    width: auto;
+                } 
+
+                #contenedor-texto-2 { /* Nombre Cooperativa De transportadores De Galapa */ 
+                    font-size: 2vw;
+                    width:85%; 
+                    background-color: ;
+                    margin-left: -10%;
+
+                }
+
+                #logo-potada-text{ 
+                    width: 14%;
+                    margin-left: 29%;
+                    margin-top: -0%;
+
+                }
+
+
+            }
 
 
                 
@@ -137,14 +312,92 @@
             </div>
         </div>
         </nav>
-            <div id="div_presentacion">
-                
-                <h1 id="txt_titulo">COOTRAGAL</h1>
-                <h2 id="txt_titulo">Cooperativa De Transportadores De Galapa</h2>
-                <h5>43 años al servicio de la comunidad, CRECIENDO JUNTOS</h5>
+        <br><br><br>
 
+  <!-- Start Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active" id="carusel">
+             <img id="img-portada" class="" src="\img\banner-bienvenida-pal-2.png"> 
+                <div class="container">
+                    <div class="row p-5">
+                        <div id="container_1" class="mx-auto col-md-8 col-lg-6 order-lg-last">
+
+                            <div class="text-align-left" id="contenedor-texto-1">
+
+                                    <h1 id="txt_titulo" class="h1">COOTRAGAL</h1>
+
+                            </div>
+
+                            <div class="text-align-left" id="contenedor-texto-2">
+
+                                    <h3 id="txt_subtitulo" class="h2">Cooperativa De Transportadores De Galapa.</h3>
+                            </div>
+
+                            <div class="logo" id="contenedor-texto-3">
+                                    <img id="logo-potada-text" src="\img\logo-borde-blanco.png" alt="">
+       
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
-               <img id="img-portada" src="img\portada-empresa-slider.png" alt="">
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Proident occaecat</h1>
+                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                                <p>
+                                    You are permitted to use this Zay CSS template for your commercial websites. 
+                                    You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="public\img\banner-bienvenida-pal.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Repr in voluptate</h1>
+                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <p>
+                                    We bring you 100% free CSS templates for your websites. 
+                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- End Banner Hero -->
+     
+
 
                      
     </body>

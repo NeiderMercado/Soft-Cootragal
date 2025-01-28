@@ -22,23 +22,23 @@
                 @method("PUT")
 
                        <div class="form-group">
-                            <label for="exampleFor
-                            mControlInput1" require>Fecha: </label>
+                            <label for="exampleFormControlInput1" require>Fecha: </label>
                             <input type="datetime-local" autocomplete="off" class="form-control" id="form-date" name="date_activi" required>
                         </div>
+
                         <div class="form-group">
                             <label for="exampleFormControlSelect1" require>Interno-Placa</label>
-                            <select class="form-control" id="form-int-placa" name="int-placa" placeholder="{{$novedad_camaras->interno}}" value="{{$novedad_camaras->interno}}" required>
-                                <option value="{{$novedad_camaras->interno}}">{{$novedad_camaras->interno}}</option>
+                            <input type="text" class="form-control" placeholder="{{$novedad_camaras->interno}}" id="int-placa" name="int-placa" value="{{$novedad_camaras->interno}}" required>
 
                         </div>
+
 
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1" require>Conductor</label>
-                            <select class="form-control" id="form-conductor" name="conductor" placeholder="{{$novedad_camaras->conductor}}" value="{{$novedad_camaras->conductor}}" required>
-                                <option value="{{$novedad_camaras->conductor}}">{{$novedad_camaras->conductor}}</option>
+                            <label for="exampleFormControlSelect1" require>Conductor: </label>
+                            <input type="text" class="form-control" placeholder="{{$novedad_camaras->condcutor}}" name="conductor" id="conductor" value="{{$novedad_camaras->conductor}}" required>
 
                         </div>
+                        
 
                         <div class="form-group">
                             <label for="exampleFormControlSelect2" require>Descripción de actividad</label>
@@ -105,6 +105,7 @@
                         </button>
 
                     </div>
+
 
         </form>
  </div>

@@ -123,7 +123,7 @@
 
              <!-- Button trigger modal -->
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                <i class="bi bi-file-earmark-plus-fill"> CREAR</i>
+                <i class="bi bi-file-earmark-plus-fill"></i> Crear
                 </button>
 
                 <!-- Modal -->
@@ -221,9 +221,15 @@
                                 @elseif ($task_new->actividad == "Aforo")
 
                                     <a href="{{ route('task.update', $task_new->id)}}" type="submit" class="btn btn-success"><i class="bi bi-check2-circle"></i> Tarea realizada</a>
-                                
+
 
                                 @endif
+
+                                <table>
+                                    <th>
+                                        <td></td>
+                                    </th>
+                                </table>
                          
                             <br>                               
                             
@@ -355,7 +361,83 @@
                             <h6 class="card-subtitle mb-2 text-body-secondary">Fecha de creación: {{$done_task->fecha_novedad}}</h6>
                             <br>
 
-                            <button id="btn-detail-task" type="button" class="btn btn-primary">Detalle</button>
+
+                                <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldetalletask">
+                                         <i class="bi bi-card-checklist"></i> Detalle
+                                      
+                                    </button>
+
+                                <!-- Modal -->
+                                    <div class="modal fade" id="modaldetalletask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Detalle de actividad</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                        <form method="POST" id="app" action="{{ route('createnewtask.create')}}" enctype="multipart/form">
+                                        @csrf
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                    <label for="inputEmail4">Interno</label>
+                                                    <input type="text" class="form-control" name="int-placa" value="{{$done_task->interno}}" disabled>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Conductor</label>
+                                                    <input type="text" class="form-control" name="conductor" value="{{$done_task->conductor}}" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputAddress">Detalle de actividad: </label>
+                                                    <input type="text" class="form-control" name="observaciones" value="{{$done_task->detalle_actividad}}" disabled>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                    <label for="inputCity">Fecha de la actividad: </label>
+                                                    <input type="date" class="form-control" name="date_activi" value="{{$done_task->fecha_realizado}}" disabled>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                    <label for="inputState">Tipo de actividad</label>
+                                                    <input type="text" class="form-control" name="tipo_acti" value="{{$done_task->actividad}}" disabled>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                    <label for="inputEmail4">Responsable de la tarea: </label>
+                                                    <input type="text" class="form-control" name="int-placa" value="{{$done_task->responsable_tarea}}" disabled>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Responsable de la revisión: </label>
+                                                    <input type="text" class="form-control" name="conductor" value="{{$done_task->responsable_actividad}}" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                    <label for="inputEmail4">Soporte: </label>
+                                                    <img src="{{ asset('storage/' . $done_task->soportes) }}" alt=" Soporte revisión.">
+                                                    </div>
+
+                                                </div>
+                                      
+                                        </div>
+                                        <div class="modal-footer">
+                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                </form>  
                                                         
                             
                         </div>
@@ -369,6 +451,41 @@
   </div>
 </div>
 
+    
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                var modal = document.getElementById("myModal");
+                var span = document.getElementsByClassName("close")[0];
+
+                document.querySelectorAll('.btn-modal').forEach(button => {
+                    button.addEventListener('click', function() {
+                        var id = this.getAttribute('data-id');
+
+                        fetch(`/datos/${id}`)
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById("modal-body").innerHTML = `
+                                    <p>ID: ${data.id}</p>
+                                    <p>Nombre: ${data.nombre}</p>
+                                `;
+                                modal.style.display = "block";
+                            });
+                    });
+                });
+
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            });
+
+            </script>
 
 
 

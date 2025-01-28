@@ -101,41 +101,44 @@
                     <td>{{ $consulta1->created_at }}</td>
                     <td>
                         
-                <form action="{{ route('eliminar.delete', $consulta1->id)}}"  method="get" id="{{ $consulta1->id }}">
+                <form action="{{ route('eliminar.delete', $consulta1->id)}}" onsubmit="confirmarEliminacion(event)"  method="get" id="{{ $consulta1->id }}" >
 
                         <a href="{{ route('detalle.detalle', $consulta1->id)}}" type="submit" class="btn btn-info"><i class="bi bi-eye-fill"></i></a>
 
                         <a href="{{ route('editar.edit', $consulta1->id)}}" type="submit" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
                 
-                        @csrf 
-                        @method('delete') 
+                        @csrf
+                        @method('DELETE') 
+                        <button type="button" class="btn btn-danger btn-delete" data-id="{{ $consulta1->id }}"><i class="bi bi-trash"></i></button>
 
-
-                        <button type="button" class="btn btn-danger deleteButton" data-id="{{ $consulta1->id }}"><i class="bi bi-trash"></i>
                 </form>
 
                 
                     <!-- SCRIPT -->
-                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
-                    <script> 
-                    document.addEventListener('DOMContentLoaded', function() { 
-                        document.querySelectorAll('.deleteButton').forEach(button => { 
-                            button.addEventListener('click', function() { 
-                                const userId = this.getAttribute('data-id'); 
-                                Swal.fire({ title: '¿Estás seguro?', 
-                                text: '¿Quieres eliminar este registro?', 
-                                icon: 'warning', showCancelButton: true, 
-                                confirmButtonText: 'Sí, eliminar', 
-                                cancelButtonText: 'Cancelar' 
-                                }).then((result) => { 
-                                    if (result.isConfirmed) { 
-                                        document.getElementById('{{ $consulta1->id }}').submit(); 
-                                        } }); 
-                                    }); 
-                                }); 
-                            }); 
-                    </script>
+                    <script>
+                        document.querySelectorAll('.btn-delete').forEach(button => {
+                            button.addEventListener('click', function() {
+                                const form = this.closest('form');
+                                const id = this.getAttribute('data-id');
 
+                                Swal.fire({
+                                    title: '¿Estás seguro?',
+                                    text: "¡No podrás revertir esto!",
+                                    icon: 'warning',
+                                    showCancelButton: true,
+                                    confirmButtonColor: '#3085d6',
+                                    cancelButtonColor: '#d33',
+                                    confirmButtonText: 'Sí, eliminarlo!',
+                                    cancelButtonText: 'Cancelar'
+                                    
+                                }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        form.submit();
+                                    }
+                                });
+                            });
+                        });
+                    </script>
 
 
                     </td>
