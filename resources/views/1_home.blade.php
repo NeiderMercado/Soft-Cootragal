@@ -17,7 +17,7 @@
     
 <div class="container p-4 mb-2 bg-white text-dark">
 
-
+PRUEBA PARA GIT
          @if ($mensaje = Session::get('exito'))
 
          <div class="alert alert-success alert-dismissible fade show">
