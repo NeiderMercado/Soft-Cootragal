@@ -378,8 +378,7 @@
             
         </div>
 
-          <h2>Prueba de commit por git</h2>  
-          
+        <h2>estebancambios</h2>          
 
         <div class="container-fluid" id="container-operaciones">
         <table border="0" id="tabla-1">
