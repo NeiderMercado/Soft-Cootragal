@@ -267,7 +267,7 @@
                 #container-operaciones{
                     height: 25%;
                     background-color: ;
-                    background-image: url("/img/banner/1.jpg");
+                    /*background-image: url("/img/banner/1.jpg");*/
                     margin-top: 1%;
 
                 }
