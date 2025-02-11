@@ -378,7 +378,9 @@
             
         </div>
 
-          <h2>Prueba de commit por git</h2>      
+          <h2>Prueba de commit por git</h2>  
+          
+          <h3>Esteban realiza cambios desde este pc</h3>
         <div class="container-fluid" id="container-operaciones">
         <table border="0" id="tabla-1">
             <tr>
