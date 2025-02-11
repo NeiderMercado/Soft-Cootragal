@@ -377,9 +377,6 @@
 
             
         </div>
-
-        <h2>estebancambios</h2>          
-
         <div class="container-fluid" id="container-operaciones">
         <table border="0" id="tabla-1">
             <tr>
