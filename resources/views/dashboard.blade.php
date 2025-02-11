@@ -11,6 +11,7 @@
                 <div id="container-welcomen" class="container-fluid">
                 
                   <img  id="logo-welcome" src="\img\banner-bienvenida-pal.png" alt="">
+                  <h2>PRUEBA</h2>
      
                 </div>
                 

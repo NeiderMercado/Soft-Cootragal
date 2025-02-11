@@ -87,10 +87,11 @@
 
 
                 #img-portada{
-                    width: 102%;
-                    height: 100%;
+                    width: 100%;
+                    height: 15%;
                     margin-left: center;
                 }
+
 
 
                 
@@ -176,6 +177,15 @@
                 #contenedor-texto-2 { 
                     font-size: 1vw; 
                 } 
+
+                #carusel{
+                    background-color: ;
+                }
+
+                #img-portada{
+                    margin-top: -10%;
+                    height: 10%;
+                }
             } 
 
 
@@ -221,6 +231,47 @@
 
                 }
 
+                #carusel{
+                    background-color: ;*************
+                }
+
+                #img-portada{
+                    margin-top: -10%;
+                    height: 3%;
+                }
+
+                #container-inicio{
+                    background-color: blue;
+                    width: 100%;
+                    height: 50%;
+                }
+
+                #btn-control-seleecion{
+                    width: 240px;
+                    height: 280px;
+                    background-color: ;
+                    margin-left: 20%;
+                    border-color: blue;
+                    border-radius: 30px;
+                }
+
+                #logo-1{
+                    width: 80%;
+                    height: 65%;
+                }
+
+                #tabla-1{
+                    margin-left: 20%;
+                }
+
+                #container-operaciones{
+                    height: 25%;
+                    background-color: ;
+                    background-image: url("/img/banner/1.jpg");
+                    margin-top: 1%;
+
+                }
+
             }
 
 
@@ -250,6 +301,12 @@
                     margin-top: -0%;
 
                 }
+
+                #img-portada{
+                    height: 10%;
+                }
+
+               
 
 
             }
@@ -314,17 +371,82 @@
         </nav>
         <br><br><br>
 
-  <!-- Start Banner Hero -->
-    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-        </ol>
+        <div class="container-fluid" id="container-inicio">
+            
+            <img id="img-portada" src="img/perfil-empresa-copia.jpg" alt="">
+
+            
+        </div>
+
+
+        <div class="container-fluid" id="container-operaciones">
+        <table border="0" id="tabla-1">
+            <tr>
+                <td>
+                <button id="btn-control-seleecion" class="btn btn-light" type="button">
+                
+                    <h4>¿Quienes somos?</h4>
+                    <img id="logo-1" src="img/logos-botones/1.png" alt="">
+                    <br>
+                    <br>
+                    <h6>-- Ver más --</h6>
+                </button>
+                </td>
+
+                <td>
+                    <div class="container-fluid" id="container-operaciones">
+                            <button id="btn-control-seleecion" class="btn btn-light" type="button">
+                                
+                                <h4>La Cooperativa</h4>
+                                <img id="logo-1" src="img/logos-botones/2.png" alt="">
+                                <br>
+                                <h6>-- Ver más --</h6>
+                            </button>
+
+                    </div>
+
+                </td>
+
+                <td>
+                    <div class="container-fluid" id="container-operaciones">
+                            <button id="btn-control-seleecion" class="btn btn-light" type="button">
+                                
+                                <h4>Operaciones</h4>
+                                <img id="logo-1" src="img/logos-botones/3.png" alt="">
+                                <br>
+                                <h6>-- Ver más --</h6>
+                            </button>
+
+                    </div>
+
+                </td>
+
+                <td>
+                    <div class="container-fluid" id="container-operaciones">
+                            <button id="btn-control-seleecion" class="btn btn-light" type="button">
+                                
+                                <h4>Contrato</h4>
+                                <img id="logo-1" src="img/logos-botones/4.png" alt="">
+                                <br>
+                                <h6>-- Ver más --</h6>
+                            </button>
+
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+
+
+
+        </div>
+
+
+
         <div class="carousel-inner">
             
             <div class="carousel-item active" id="carusel">
-             <img id="img-portada" class="" src="\img\banner-bienvenida-pal-2.png"> 
+             
                 <div class="container">
                     <div class="row p-5">
                         <div id="container_1" class="mx-auto col-md-8 col-lg-6 order-lg-last">
@@ -349,53 +471,8 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Proident occaecat</h1>
-                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
-                                <p>
-                                    You are permitted to use this Zay CSS template for your commercial websites. 
-                                    You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="public\img\banner-bienvenida-pal.png" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Repr in voluptate</h1>
-                                <h3 class="h2">Ullamco laboris nisi ut </h3>
-                                <p>
-                                    We bring you 100% free CSS templates for your websites. 
-                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
-            <i class="fas fa-chevron-right"></i>
-        </a>
-    </div>
-    <!-- End Banner Hero -->
+           
+
      
 
 
