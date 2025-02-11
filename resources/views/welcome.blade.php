@@ -262,14 +262,16 @@
 
                 #tabla-1{
                     margin-left: 20%;
+                    margin-top: 40px;
                 }
 
                 #container-operaciones{
-                    height: 25%;
-                    background-color: ;
-                    /*background-image: url("/img/banner/1.jpg");*/
-                    margin-top: 1%;
 
+                    background-color: ;
+                    opacity: 0.10;
+                    background-image: url("/img/banner/1.jpg");
+                    height: 400px;
+                    
                 }
 
             }
@@ -373,11 +375,11 @@
 
         <div class="container-fluid" id="container-inicio">
             
-            <img id="img-portada" src="img/perfil-empresa-copia.jpg" alt="">
-
-            
+            <img id="img-portada" src="img/perfil-empresa-copia.jpg" alt="">   
         </div>
+
         <div class="container-fluid" id="container-operaciones">
+            <br>
         <table border="0" id="tabla-1">
             <tr>
                 <td>
@@ -392,7 +394,6 @@
                 </td>
 
                 <td>
-                    <div class="container-fluid" id="container-operaciones">
                             <button id="btn-control-seleecion" class="btn btn-light" type="button">
                                 
                                 <h4>La Cooperativa</h4>
@@ -401,12 +402,11 @@
                                 <h6>-- Ver más --</h6>
                             </button>
 
-                    </div>
 
                 </td>
 
                 <td>
-                    <div class="container-fluid" id="container-operaciones">
+
                             <button id="btn-control-seleecion" class="btn btn-light" type="button">
                                 
                                 <h4>Operaciones</h4>
@@ -415,12 +415,11 @@
                                 <h6>-- Ver más --</h6>
                             </button>
 
-                    </div>
 
                 </td>
 
                 <td>
-                    <div class="container-fluid" id="container-operaciones">
+
                             <button id="btn-control-seleecion" class="btn btn-light" type="button">
                                 
                                 <h4>Contrato</h4>
@@ -429,7 +428,6 @@
                                 <h6>-- Ver más --</h6>
                             </button>
 
-                    </div>
 
                 </td>
             </tr>
