@@ -261,16 +261,24 @@
                 }
 
                 #tabla-1{
-                    margin-left: 20%;
+                    margin-left: 17%;
                     margin-top: 40px;
+                    width: 65%;
+                    
                 }
 
-                #container-operaciones{
+                .cont-img{
 
-                    background-color: ;
-                    opacity: 0.10;
-                    background-image: url("/img/banner/1.jpg");
-                    height: 400px;
+                    background-color: red;
+                    
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                    
+                    url("/img/banner/1.jpg");
+                    background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
+                    background-size: cover; /*Caracteristica que cubre todo el contenedor*/
+                    background-position: center; /*Caracteristica que centra la imagen*/
+                    opacity: ;
+                    padding: 1.5%;
                     
                 }
 
@@ -378,8 +386,8 @@
             <img id="img-portada" src="img/perfil-empresa-copia.jpg" alt="">   
         </div>
 
-        <div class="container-fluid" id="container-operaciones">
-            <br>
+        <div class="cont-img" id="container-operaciones">
+
         <table border="0" id="tabla-1">
             <tr>
                 <td>
@@ -392,7 +400,7 @@
                     <h6>-- Ver más --</h6>
                 </button>
                 </td>
-
+            
                 <td>
                             <button id="btn-control-seleecion" class="btn btn-light" type="button">
                                 
