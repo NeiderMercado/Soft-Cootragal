@@ -190,33 +190,9 @@
 
 
             @media (min-width: 1201px) { /* Ajusta el tamaño del texto para pantallas grandes */ 
-                #contenedor-texto-1{
-                    background-color: ;
-                    margin-top: -60%;
-                    margin-left: -20%;
-                    width: auto;
-                    -webkit-text-stroke-width: 2px;
-                    -webkit-text-stroke-color: black;
-                } 
 
-                #txt_titulo{
-                    font-size: 4vw;
-                    color: white;
-                    font-family: cooper hewitt heavy;
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: black;
-                   
-                }
 
-                #contenedor-texto-2 { 
-                    font-size: 2vw; 
-                    background-color: ;
-                    margin-left: -20%;
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: black;
-
-                }
-                
+               
                 #contenedor-texto-3{
                     background-color: ;
                     margin-top: -30%;
@@ -231,20 +207,12 @@
 
                 }
 
-                #carusel{
-                    background-color: ;*************
-                }
 
                 #img-portada{
                     margin-top: -10%;
                     height: 3%;
                 }
 
-                #container-inicio{
-                    background-color: blue;
-                    width: 100%;
-                    height: 50%;
-                }
 
                 #btn-control-seleecion{
                     width: 240px;
@@ -260,6 +228,13 @@
                     height: 65%;
                 }
 
+                #logo-3{
+                    width: 65%;
+                    height: 55%;
+                    border-color: red;
+               
+                }
+
                 #logo-4{
                     width: 65%;
                     height: 55%;
@@ -272,13 +247,69 @@
                     
                 }
 
+                
+                #container-inicio{
+                    background-color: green;
+                    height: 700px;
+                    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+                    url("/img/banner/2.png");
+                    background-size: cover;
+                }
+
+
+                #contenedor-texto-1{
+                    background-color:;
+                    margin-top:-660px;
+                    margin-left: -15%;
+                    width: auto;
+                    -webkit-text-stroke-width: 2px;
+                    -webkit-text-stroke-color: black;
+                    font-family: Arial;
+                    
+                    **************
+                } 
+
+
+                #txt_titulo{
+                    font-size: 4vw;
+                    color: white;
+                    font-family: arial;
+                    font-weight: 900;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: black;
+                   
+                }
+
+                #contenedor-texto-2 { 
+                    font-size:3.53; 
+                    background-color: ;
+                    margin-left: -14%;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: black;
+                    
+                }
+
+                #txt_subtitulo {
+                    font-size: 30px;
+
+
+                }
+
+                #img-logo-1 {
+                    width:8%;
+                    height:21%;
+                    margin-top:410px;
+                    margin-left: 11%;
+                    
+                }
+
                 .cont-img{
 
-                    background-color: red;
+                    background-color: ;
                     
                     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                    
                     url("/img/banner/1.jpg");
+                    margin-top: ;
                     background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
                     background-size: cover; /*Caracteristica que cubre todo el contenedor*/
                     background-position: center; /*Caracteristica que centra la imagen*/
@@ -287,12 +318,13 @@
                     
                 }
 
+
             }
 
 
             @media (min-width: 1400px) and (max-width: 1676px) {
                 #container_1{
-                    background-color: red;
+                    background-color: ;
                     color: red;
                 }
 
@@ -387,8 +419,8 @@
         <br><br><br>
 
         <div class="container-fluid" id="container-inicio">
-            
-            <img id="img-portada" src="img/perfil-empresa-copia.jpg" alt="">   
+            <img id="img-logo-1" src="img/logos-botones/5.png" alt="">
+
         </div>
 
         <div class="cont-img" id="container-operaciones">
@@ -407,40 +439,38 @@
                 </td>
             
                 <td>
-                            <button id="btn-control-seleecion" class="btn btn-light" type="button">
+                    <button id="btn-control-seleecion" class="btn btn-light" type="button">
                                 
-                                <h4>La Cooperativa</h4>
-                                <img id="logo-1" src="img/logos-botones/2.png" alt="">
-                                <br>
-                                <div class="btn btn-primary">Ver más</div>
-                            </button>
-
+                        <h4>La Cooperativa</h4>
+                        <img id="logo-1" src="img/logos-botones/2.png" alt="La Cooperativa">
+                        <div class="btn btn-primary">Ver más</div>
+                    </button>
 
                 </td>
 
                 <td>
 
-                            <button id="btn-control-seleecion" class="btn btn-light" type="button">
-                                
-                                <h4>Operaciones</h4>
-                                <img id="logo-1" src="img/logos-botones/3.png" alt="">
-                                <br>
-                                <div class="btn btn-primary">Ver más</div>
-                            </button>
-
+                    <button id="btn-control-seleecion" class="btn btn-light" type="button">
+                        <h4>Operaciones</h4>
+                        
+                        <img id="logo-3" src="img/logos-botones/3.png" alt="Operaciones">
+                        <br>
+                        <br>
+                        <div class="btn btn-primary">Ver más</div>
+                    </button>
 
                 </td>
 
                 <td>
 
-                            <button id="btn-control-seleecion" class="btn btn-light" type="button">
+                    <button id="btn-control-seleecion" class="btn btn-light" type="button">
                                 
-                                <h4>Contrato</h4>
-                                <img id="logo-4" src="img/logos-botones/4.png" alt="">
-                                <br>
-                                <br>
-                                <div class="btn btn-primary">Ver más</div>
-                            </button>
+                        <h4>Contrato</h4>
+                        <img id="logo-4" src="img/logos-botones/4.png" alt="">
+                        <br>
+                        <br>
+                        <div class="btn btn-primary">Ver más</div>
+                    </button>
 
 
                 </td>
@@ -452,13 +482,6 @@
         </div>
 
 
-
-        <div class="carousel-inner">
-            
-            <div class="carousel-item active" id="carusel">
-             
-                <div class="container">
-                    <div class="row p-5">
                         <div id="container_1" class="mx-auto col-md-8 col-lg-6 order-lg-last">
 
                             <div class="text-align-left" id="contenedor-texto-1">
@@ -477,15 +500,13 @@
        
                             </div>
                         </div>
-                        
-                    </div>
-                </div>
-            </div>
            
+        <div>
+                    
 
-     
 
-
+         
+            </div>
                      
     </body>
 </html>
