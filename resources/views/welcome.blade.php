@@ -260,6 +260,11 @@
                     height: 65%;
                 }
 
+                #logo-4{
+                    width: 65%;
+                    height: 55%;
+                }
+
                 #tabla-1{
                     margin-left: 17%;
                     margin-top: 40px;
@@ -396,8 +401,8 @@
                     <h4>¿Quienes somos?</h4>
                     <img id="logo-1" src="img/logos-botones/1.png" alt="">
                     <br>
-                    <br>
-                    <h6>-- Ver más --</h6>
+                    <div class="btn btn-primary">Ver más</div>
+             
                 </button>
                 </td>
             
@@ -407,7 +412,7 @@
                                 <h4>La Cooperativa</h4>
                                 <img id="logo-1" src="img/logos-botones/2.png" alt="">
                                 <br>
-                                <h6>-- Ver más --</h6>
+                                <div class="btn btn-primary">Ver más</div>
                             </button>
 
 
@@ -420,7 +425,7 @@
                                 <h4>Operaciones</h4>
                                 <img id="logo-1" src="img/logos-botones/3.png" alt="">
                                 <br>
-                                <h6>-- Ver más --</h6>
+                                <div class="btn btn-primary">Ver más</div>
                             </button>
 
 
@@ -431,9 +436,10 @@
                             <button id="btn-control-seleecion" class="btn btn-light" type="button">
                                 
                                 <h4>Contrato</h4>
-                                <img id="logo-1" src="img/logos-botones/4.png" alt="">
+                                <img id="logo-4" src="img/logos-botones/4.png" alt="">
                                 <br>
-                                <h6>-- Ver más --</h6>
+                                <br>
+                                <div class="btn btn-primary">Ver más</div>
                             </button>
 
 
