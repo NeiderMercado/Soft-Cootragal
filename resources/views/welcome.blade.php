@@ -318,6 +318,21 @@
                     
                 }
 
+                .cont-img-servicios{
+
+                    background-color: rgba(51, 167, 255, 0.26);
+                    width: 100%;
+                    height: 500px;
+                    margin-top: 39.3%;
+                    background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
+                    background-size: cover; /*Caracteristica que cubre todo el contenedor*/
+                    background-position: center; /*Caracteristica que centra la imagen*/
+                    opacity: ;
+                    padding: 1.5%;
+
+                    }
+
+
 
             }
 
@@ -476,37 +491,35 @@
                 </td>
             </tr>
         </table>
+    </div>
 
 
+    <div id="container_1" class="mx-auto col-md-8 col-lg-6 order-lg-last">
 
-        </div>
+                <div class="text-align-left" id="contenedor-texto-1">
 
+                    <h1 id="txt_titulo" class="h1">COOTRAGAL</h1>
 
-                        <div id="container_1" class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                </div>
 
-                            <div class="text-align-left" id="contenedor-texto-1">
+            <div class="text-align-left" id="contenedor-texto-2">
 
-                                    <h1 id="txt_titulo" class="h1">COOTRAGAL</h1>
+                    <h3 id="txt_subtitulo" class="h2">Cooperativa De Transportadores De Galapa.</h3>
+            </div>
 
-                            </div>
+            <div class="logo" id="contenedor-texto-3">
+                    <img id="logo-potada-text" src="\img\logo-borde-blanco.png" alt="">
+            
+            </div>
 
-                            <div class="text-align-left" id="contenedor-texto-2">
-
-                                    <h3 id="txt_subtitulo" class="h2">Cooperativa De Transportadores De Galapa.</h3>
-                            </div>
-
-                            <div class="logo" id="contenedor-texto-3">
-                                    <img id="logo-potada-text" src="\img\logo-borde-blanco.png" alt="">
-       
-                            </div>
-                        </div>
+    </div>
            
-        <div>
+        <div class="cont-img-servicios" id="container-servicios">
                     
-
+            
 
          
-            </div>
+        </div>
                      
     </body>
 </html>
