@@ -332,6 +332,22 @@
 
                     }
 
+                    #txt_titulo-servicios{ /*SERVICIOS*/ 
+                    margin-top: -20%;
+                    margin-left: -10%;
+                    width: auto;
+                    background-color: red;
+                } 
+
+                    #txt_subtitulo-servicios{
+                    margin-top: 95%;
+                    margin-left: -10%;
+                    width: auto;
+                    background-color: red;
+
+
+                }
+
 
 
             }
@@ -368,7 +384,6 @@
                     height: 10%;
                 }
 
-               
 
 
             }
@@ -520,6 +535,19 @@
 
          
         </div>
-                     
+        <div id="container_1" class="mx-auto col-md-8 col-lg-6 order-lg-last">
+
+            <div class="text-align-left" id="contenedor-texto-1">
+
+                <h1 id="txt_titulo-servicios" class="h1">Servicios</h1>
+
+            </div>
+
+            <div class="text-align-left" id="contenedor-texto-2">
+
+                <h3 id="txt_subtitulo-servicios" class="h2">"Nuestra empresa cuenta con una gama de servicios diseñados para ofrecer un transporte público de calidad y confiable. Nos enfocamos en garantizar la puntualidad, la seguridad y la comodidad de nuestros usuarios en todo momento. Además, estamos comprometidos con la innovación y la mejora continua, utilizando tecnologías avanzadas y vehículos modernos para asegurar que cada viaje sea una experiencia positiva. Nuestro objetivo es contribuir al bienestar de la comunidad y ofrecer soluciones de movilidad eficientes y accesibles para todos."</h3>
+            </div>
+
+       
     </body>
 </html>
