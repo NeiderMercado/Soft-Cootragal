@@ -323,7 +323,7 @@
                     background-color: rgba(51, 167, 255, 0.26);
                     width: 100%;
                     height: 500px;
-                    margin-top: 39.3%;
+                    margin-top: 34.8%;
                     background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
                     background-size: cover; /*Caracteristica que cubre todo el contenedor*/
                     background-position: center; /*Caracteristica que centra la imagen*/
@@ -332,20 +332,27 @@
 
                     }
 
-                    #txt_titulo-servicios{ /*SERVICIOS*/ 
-                    margin-top: -20%;
-                    margin-left: -10%;
-                    width: auto;
-                    background-color: red;
+                    #container-servicios{ /*SERVICIOS*/ 
+                    margin-top: 25%;
+                    margin-left: 50%;
+                    width: 50%;
+                    background-color: ;
+                    font-family: Arial, Helvetica, sans-serif;
+                                                
                 } 
 
-                    #txt_subtitulo-servicios{
-                    margin-top: 95%;
-                    margin-left: -10%;
-                    width: auto;
-                    background-color: red;
+                    .txt_subtitulo-servicios-des{
+                    margin-top: 5%;
+                    margin-left: -15%;
+                    width: 88%;
+                    background-color: ;
+                    font-size: 19px;
+                                              
 
+                }
 
+                body {
+                    font-family: Garamond, serif;
                 }
 
 
@@ -530,23 +537,25 @@
     </div>
            
         <div class="cont-img-servicios" id="container-servicios">
-                    
+            <h1 id="txt_titulo-servicios" class="txt_titulo-servicios">Servicios</h1>          
             
+                <div class="container" id="container-servicios">
+            <h2>Servicios</h2>
 
-         
         </div>
-        <div id="container_1" class="mx-auto col-md-8 col-lg-6 order-lg-last">
 
-            <div class="text-align-left" id="contenedor-texto-1">
+        <div class="container" id="container-descrip-servicios">
+            <h4>"Nuestra empresa cuenta con una gama de servicios diseñados para ofrecer un transporte público de 
+                calidad y confiable. Nos enfocamos en garantizar la puntualidad, la seguridad y la comodidad de 
+                nuestros usuarios en todo momento. Además, estamos comprometidos con la innovación y la mejora 
+                continua, utilizando tecnologías avanzadas y vehículos modernos para asegurar que cada viaje sea 
+                una experiencia positiva. Nuestro objetivo es contribuir al bienestar de la comunidad y ofrecer 
+                soluciones de movilidad eficientes y accesibles para todos."</h4>
 
-                <h1 id="txt_titulo-servicios" class="h1">Servicios</h1>
+        </div>
 
-            </div>
+        </div>
 
-            <div class="text-align-left" id="contenedor-texto-2">
-
-                <h3 id="txt_subtitulo-servicios" class="h2">"Nuestra empresa cuenta con una gama de servicios diseñados para ofrecer un transporte público de calidad y confiable. Nos enfocamos en garantizar la puntualidad, la seguridad y la comodidad de nuestros usuarios en todo momento. Además, estamos comprometidos con la innovación y la mejora continua, utilizando tecnologías avanzadas y vehículos modernos para asegurar que cada viaje sea una experiencia positiva. Nuestro objetivo es contribuir al bienestar de la comunidad y ofrecer soluciones de movilidad eficientes y accesibles para todos."</h3>
-            </div>
 
        
     </body>
