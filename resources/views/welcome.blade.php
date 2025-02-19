@@ -320,36 +320,54 @@
 
                 .cont-img-servicios{
 
-                    background-color: rgba(51, 167, 255, 0.26);
+                    background-color: rgba(58, 187, 46, 0.26);
                     width: 100%;
-                    height: 500px;
+                    height: 349px;
                     margin-top: 34.8%;
+                    margin-left: auto;
                     background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
                     background-size: cover; /*Caracteristica que cubre todo el contenedor*/
                     background-position: center; /*Caracteristica que centra la imagen*/
                     opacity: ;
                     padding: 1.5%;
 
-                    }
+                }
 
-                    #container-servicios{ /*SERVICIOS*/ 
-                    margin-top: 25%;
-                    margin-left: 50%;
-                    width: 50%;
-                    background-color: ;
-                    font-family: Arial, Helvetica, sans-serif;
-                                                
-                } 
+                #txt-servicios{
+                        margin-top: -16%;
+                        margin-left: 160px;
+                        font-size: 56px;
+                }
 
-                    .txt_subtitulo-servicios-des{
-                    margin-top: 5%;
-                    margin-left: -15%;
-                    width: 88%;
+                #container-descrip-servicios{
+                    margin-top: 0%;
+                    margin-left: 160px;
+                    width: 42%; 
                     background-color: ;
                     font-size: 19px;
                                               
-
                 }
+
+                #tabla-servicios-1{
+                    margin-left: 55%;
+                    margin-top: -15%;
+                    background-color: ;
+                    width: 40%;
+                    font-size: 150px;
+                                    
+                }
+
+                #btn-servicios{
+                    width: 205px;
+                    height: 250px;
+                }
+
+                #logo-5{
+                    width: 109px;
+                    height: 106px;
+                
+                }
+
 
                 body {
                     font-family: Garamond, serif;
@@ -537,22 +555,59 @@
     </div>
            
         <div class="cont-img-servicios" id="container-servicios">
-            <h1 id="txt_titulo-servicios" class="txt_titulo-servicios">Servicios</h1>          
+      
             
-                <div class="container" id="container-servicios">
-            <h2>Servicios</h2>
+
+        </div>
+
+        <div class="container" id="txt-servicios">
+            <span>Servicios</span>
 
         </div>
 
         <div class="container" id="container-descrip-servicios">
-            <h4>"Nuestra empresa cuenta con una gama de servicios diseñados para ofrecer un transporte público de 
+            <span>"Nuestra empresa cuenta con una gama de servicios diseñados para ofrecer un transporte público de 
                 calidad y confiable. Nos enfocamos en garantizar la puntualidad, la seguridad y la comodidad de 
                 nuestros usuarios en todo momento. Además, estamos comprometidos con la innovación y la mejora 
                 continua, utilizando tecnologías avanzadas y vehículos modernos para asegurar que cada viaje sea 
                 una experiencia positiva. Nuestro objetivo es contribuir al bienestar de la comunidad y ofrecer 
-                soluciones de movilidad eficientes y accesibles para todos."</h4>
+                soluciones de movilidad eficientes y accesibles para todos."</span>
 
         </div>
+
+            <table id="tabla-servicios-1">
+                <tbody>
+                    <tr>
+                        <td>
+                            <button id="btn-servicios" type="button" class="btn btn-light">
+                                <img id="logo-5" src="img/logos-botones/6.png" alt="">
+                                <br>
+                                <h5>Viajes Ocasionales</h5>
+                                <div class="btn btn-success">Ver más</div>                               
+                            </button>
+                        </td>
+                        <br>
+
+                        <td>
+                            <button id="btn-servicios" type="button" class="btn btn-light">
+                                <img id="logo-5" src="img/logos-botones/7.png" alt="">
+                                <br>
+                                <h5>Rutas Actuales</h5>
+                                <div class="btn btn-success">Ver más</div>                           
+                            </button>
+                        </td>
+
+                        <td>
+                            <button id="btn-servicios" type="button" class="btn btn-light">
+                                <img id="logo-5" src="img/logos-botones/8.png" alt="">
+                                <br>
+                                <h5>EDS</h5>
+                                <div class="btn btn-success">Ver más</div>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
         </div>
 
