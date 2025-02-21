@@ -219,7 +219,7 @@
                     height: 280px;
                     background-color: ;
                     margin-left: 20%;
-                    border-color: blue;
+                    border-color: grey;
                     border-radius: 30px;
                 }
 
@@ -249,11 +249,12 @@
 
                 
                 #container-inicio{
-                    background-color: green;
+                    background-color: ;
                     height: 700px;
                     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
                     url("/img/banner/2.png");
                     background-size: cover;
+                    
                 }
 
 
@@ -266,7 +267,7 @@
                     -webkit-text-stroke-color: black;
                     font-family: Arial;
                     
-                    **************
+                   
                 } 
 
 
@@ -303,11 +304,11 @@
                     
                 }
 
-                .cont-img{
+                #container-operaciones{
 
-                    background-color: ;
+                    background-color: blue;
                     
-                    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.7)),
                     url("/img/banner/1.jpg");
                     margin-top: ;
                     background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
@@ -318,9 +319,93 @@
                     
                 }
 
+                /* INICIO DE DIVISOR DIFUMINADO  */
+
+                body
+                    {
+                    margin:0;
+                    padding:0;
+                    background-color:#03396c;
+                    }
+
+                    .editorial {
+                    display: ;
+                    width: 100%;
+                    height: 80px;
+                    max-height: 60px;
+                    margin: 0;
+                    z-index:40;
+                    bottom:0;
+                    position:;
+                    left:0px;
+                    float:right;
+                    margin-top: -1.8%;
+                    }
+
+                    .parallax1 > use {
+                    animation: move-forever1 10s linear infinite;
+                    &:nth-child(1) {
+                        animation-delay: -2s;
+                    }
+                    }
+                    .parallax2 > use {
+                    animation: move-forever2 8s linear infinite;
+                    &:nth-child(1) {
+                        animation-delay: -2s;
+                    }
+                    }
+                    .parallax3 > use {
+                    animation: move-forever3 6s linear infinite;
+                    &:nth-child(1) {
+                        animation-delay: -2s;
+                    }
+                    }
+                    .parallax4 > use {
+                    animation: move-forever4 4s linear ;
+                    &:nth-child(1) {
+                        animation-delay: -2s;
+                    }
+                    }
+                    @keyframes move-forever1 {
+                    0% {
+                        transform: translate(85px, 0%);
+                    }
+                    100% {
+                        transform: translate(-90px, 0%);
+                    }
+                    }
+                    @keyframes move-forever2 {
+                    0% {
+                        transform: translate(-90px, 0%);
+                    }
+                    100% {
+                        transform: translate(85px, 0%);
+                    }
+                    }
+                    @keyframes move-forever3 {
+                    0% {
+                        transform: translate(85px, 0%);
+                    }
+                    100% {
+                        transform: translate(-90px, 0%);
+                    }
+                    }
+                    @keyframes move-forever4 {
+                    0% {
+                        transform: translate(-90px, 0%);
+                    }
+                    100% {
+                        transform: translate(85px, 0%);
+                    }
+                    }
+                 /* FIN DE DIVISOR DIFUMINADO  */
+
+
+                
+
                 .cont-img-servicios{
 
-                    background-color: rgba(58, 187, 46, 0.26);
+                    background-color: rgba(255, 255, 255, 0.46);
                     width: 100%;
                     height: 349px;
                     margin-top: 34.8%;
@@ -330,6 +415,7 @@
                     background-position: center; /*Caracteristica que centra la imagen*/
                     opacity: ;
                     padding: 1.5%;
+                    
 
                 }
 
@@ -360,6 +446,9 @@
                 #btn-servicios{
                     width: 205px;
                     height: 250px;
+                    border-radius: 36px;
+                    border-style: solid;
+                    border-color: grey;
                 }
 
                 #logo-5{
@@ -478,6 +567,38 @@
 
         </div>
 
+
+        <svg class="editorial"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 "
+            preserveAspectRatio="none">
+            <defs>
+            <path id="gentle-wave"
+            d="M-160 44c30 0 
+                68-18 88-18s
+                68 18 88 18 
+                68-18 88-18 
+                68 18 88 18
+                v44h-352z" />
+            </defs>
+        <g class="parallax1">
+        <use xlink:href="#gentle-wave" x="50" y="3" fill="#001bff"/> AZUL
+        </g>
+            <g class="parallax2">
+        <use xlink:href="#gentle-wave" x="50" y="0" fill="#ffffff"/> BLANCO
+            </g>
+            <g class="parallax3">
+        <use xlink:href="#gentle-wave" x="50" y="9" fill="#ffffff"/>
+        </g>
+            <g class="parallax4">
+        <use xlink:href="#gentle-wave" x="50" y="6" fill="#7d7e7f"/>  ROJO
+        </g>
+        </svg>
+
+
+
+
         <div class="cont-img" id="container-operaciones">
 
         <table border="0" id="tabla-1">
@@ -488,7 +609,7 @@
                     <h4>¿Quienes somos?</h4>
                     <img id="logo-1" src="img/logos-botones/1.png" alt="">
                     <br>
-                    <div class="btn btn-primary">Ver más</div>
+                    <div class="btn btn-secondary">Ver más</div>
              
                 </button>
                 </td>
@@ -498,7 +619,7 @@
                                 
                         <h4>La Cooperativa</h4>
                         <img id="logo-1" src="img/logos-botones/2.png" alt="La Cooperativa">
-                        <div class="btn btn-primary">Ver más</div>
+                        <div class="btn btn-secondary">Ver más</div>
                     </button>
 
                 </td>
@@ -511,7 +632,7 @@
                         <img id="logo-3" src="img/logos-botones/3.png" alt="Operaciones">
                         <br>
                         <br>
-                        <div class="btn btn-primary">Ver más</div>
+                        <div class="btn btn-secondary">Ver más</div>
                     </button>
 
                 </td>
@@ -524,7 +645,7 @@
                         <img id="logo-4" src="img/logos-botones/4.png" alt="">
                         <br>
                         <br>
-                        <div class="btn btn-primary">Ver más</div>
+                        <div class="btn btn-secondary">Ver más</div>
                     </button>
 
 
