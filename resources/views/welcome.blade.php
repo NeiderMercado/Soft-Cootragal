@@ -23,6 +23,9 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Fuente de BOOSTRAP 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -306,16 +309,17 @@
 
                 #container-operaciones{
 
-                    background-color: blue;
+                    background-color: #f0f0f0;
                     
-                    background-image: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.7)),
-                    url("/img/banner/1.jpg");
+                    /*background-image: linear-gradient(rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.7)),
+                    url("/img/banner/1.jpg");*/
                     margin-top: ;
                     background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
                     background-size: cover; /*Caracteristica que cubre todo el contenedor*/
                     background-position: center; /*Caracteristica que centra la imagen*/
                     opacity: ;
                     padding: 1.5%;
+                    height: 420px;
                     
                 }
 
@@ -325,21 +329,16 @@
                     {
                     margin:0;
                     padding:0;
-                    background-color:#03396c;
+                    background-color:;
                     }
 
                     .editorial {
                     display: ;
-                    width: 100%;
-                    height: 80px;
-                    max-height: 60px;
-                    margin: 0;
-                    z-index:40;
-                    bottom:0;
-                    position:;
-                    left:0px;
-                    float:right;
-                    margin-top: -1.8%;
+                    width: 110%;
+                    height: 10%;
+                    max-height: 10%;
+                    margin-top: 5%;
+                    margin-left: -12px;
                     }
 
                     .parallax1 > use {
@@ -361,14 +360,14 @@
                     }
                     }
                     .parallax4 > use {
-                    animation: move-forever4 4s linear ;
+                    animation: move-forever4 4s linear infinite;
                     &:nth-child(1) {
                         animation-delay: -2s;
                     }
                     }
                     @keyframes move-forever1 {
                     0% {
-                        transform: translate(85px, 0%);
+                        transform: translate(85px, 10%);
                     }
                     100% {
                         transform: translate(-90px, 0%);
@@ -405,10 +404,13 @@
 
                 .cont-img-servicios{
 
-                    background-color: rgba(255, 255, 255, 0.46);
+                    /*background-color: rgba(255, 0, 0, 0.46);*/
+                    
+                    background-image: linear-gradient(#f0f0f0, rgba(172, 172, 172, 0.84)),
+                    url("/img/banner/1.jpg");
                     width: 100%;
-                    height: 349px;
-                    margin-top: 34.8%;
+                    height: 410px;
+                    margin-top: -10px;
                     margin-left: auto;
                     background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
                     background-size: cover; /*Caracteristica que cubre todo el contenedor*/
@@ -419,14 +421,21 @@
 
                 }
 
+                #grad {
+                    background-image: linear-gradient(#f0f0f0,rgb(255, 255, 255));
+                    margin-top: 34.5%;
+                }
+
                 #txt-servicios{
-                        margin-top: -16%;
-                        margin-left: 160px;
+                        margin-top: -20%;
+                        margin-left: 45%;;
                         font-size: 56px;
+                        width: 200px;;
+                        background-COLOR: ;
                 }
 
                 #container-descrip-servicios{
-                    margin-top: 0%;
+                    margin-top: 3%;
                     margin-left: 160px;
                     width: 42%; 
                     background-color: ;
@@ -436,7 +445,7 @@
 
                 #tabla-servicios-1{
                     margin-left: 55%;
-                    margin-top: -15%;
+                    margin-top: -13%;
                     background-color: ;
                     width: 40%;
                     font-size: 150px;
@@ -565,7 +574,7 @@
         <div class="container-fluid" id="container-inicio">
             <img id="img-logo-1" src="img/logos-botones/5.png" alt="">
 
-        </div>
+        
 
 
         <svg class="editorial"
@@ -578,27 +587,25 @@
             d="M-160 44c30 0 
                 68-18 88-18s
                 68 18 88 18 
-                68-18 88-18 
-                68 18 88 18
+                68-18 188-18 
+                68 18 188 18
                 v44h-352z" />
             </defs>
         <g class="parallax1">
-        <use xlink:href="#gentle-wave" x="50" y="3" fill="#001bff"/> AZUL
+        <use xlink:href="#gentle-wave" x="50" y="3" fill="#857566"/> 
         </g>
             <g class="parallax2">
-        <use xlink:href="#gentle-wave" x="50" y="0" fill="#ffffff"/> BLANCO
+        <use xlink:href="#gentle-wave" x="50" y="0" fill="#bcbcc4"/> amarilo
             </g>
             <g class="parallax3">
-        <use xlink:href="#gentle-wave" x="50" y="9" fill="#ffffff"/>
+        <use xlink:href="#gentle-wave" x="50" y="9" fill="#f0f0f0"/> AZUL
         </g>
             <g class="parallax4">
-        <use xlink:href="#gentle-wave" x="50" y="6" fill="#7d7e7f"/>  ROJO
+        <use xlink:href="#gentle-wave" x="50" y="56" fill="#dddddd"/>  morado
         </g>
         </svg>
 
-
-
-
+        </div>
         <div class="cont-img" id="container-operaciones">
 
         <table border="0" id="tabla-1">
@@ -674,6 +681,10 @@
             </div>
 
     </div>
+
+        <div id="grad">
+                <h2></h2>
+        </div>
            
         <div class="cont-img-servicios" id="container-servicios">
       
@@ -731,6 +742,43 @@
             </table>
 
         </div>
+
+        <!-- DIV CARRUSEL START -->
+
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner/3.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner/4.jpg" alt="Chicago" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner/5.jpg" alt="New York" class="d-block" style="width:100%">
+            </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+            </div>
+
+
+        <!-- DIV CARRUSEL END -->
 
 
        
