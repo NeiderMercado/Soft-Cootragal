@@ -333,12 +333,12 @@
                     }
 
                     .editorial {
-                    display: ;
-                    width: 110%;
-                    height: 10%;
+                    display: flex;
+                    width: 101.62%;
+                    height:10%;
                     max-height: 10%;
                     margin-top: 5%;
-                    margin-left: -12px;
+                    margin-left: -1%;
                     }
 
                     .parallax1 > use {
@@ -401,10 +401,11 @@
 
 
                 
+                /**inicio configuracion de servicios*/
 
                 .cont-img-servicios{
 
-                    /*background-color: rgba(255, 0, 0, 0.46);*/
+                    /*background-color: rgba(56, 56, 56, 0);*/
                     
                     background-image: linear-gradient(#f0f0f0, rgba(172, 172, 172, 0.84)),
                     url("/img/banner/1.jpg");
@@ -463,9 +464,23 @@
                 #logo-5{
                     width: 109px;
                     height: 106px;
+                    
                 
                 }
+                /**fin configuracion de servicios*/
 
+
+                /**inicio configuracion de carrusel*/
+
+                #img-carrusel{
+                width:auto; 
+                height:585px;
+                margin-top:2%; 
+                background-color: ; 
+                }
+
+
+                /**fin configuracion de carrusel*/
 
                 body {
                     font-family: Garamond, serif;
@@ -575,7 +590,8 @@
             <img id="img-logo-1" src="img/logos-botones/5.png" alt="">
 
         
-
+        <!--inicio de animacion portada -->
+        
 
         <svg class="editorial"
             xmlns="http://www.w3.org/2000/svg"
@@ -604,6 +620,8 @@
         <use xlink:href="#gentle-wave" x="50" y="56" fill="#dddddd"/>  morado
         </g>
         </svg>
+
+        <!--fin de animacion portada -->
 
         </div>
         <div class="cont-img" id="container-operaciones">
@@ -758,13 +776,13 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/banner/3.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                <img src="img/banner/3.jpg" id="img-carrusel" alt="Los Angeles" class="d-block" style="width:100%">
             </div>
             <div class="carousel-item">
-                <img src="img/banner/4.jpg" alt="Chicago" class="d-block" style="width:100%">
+                <img src="img/banner/4.jpg" id="img-carrusel" alt="Chicago" class="d-block" style="width:100%">
             </div>
             <div class="carousel-item">
-                <img src="img/banner/5.jpg" alt="New York" class="d-block" style="width:100%">
+                <img src="img/banner/5.jpg" id="img-carrusel" alt="New York" class="d-block" style="width:100%">
             </div>
             </div>
 
@@ -780,7 +798,12 @@
 
         <!-- DIV CARRUSEL END -->
 
+        <!-- INICIO CONTACTENOS-->
 
-       
+        <div class="container" id="txt-Contactenos">
+            <span>Contactenos</span>
+
+        </div>
+       <!-- FIN CONTACTENOS-->
     </body>
 </html>
