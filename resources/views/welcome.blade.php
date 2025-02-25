@@ -800,8 +800,40 @@
 
         <!-- INICIO CONTACTENOS-->
 
-        <div class="container" id="txt-Contactenos">
-            <span>Contactenos</span>
+<br>
+        <div class="container" id="container-contacto">
+            <div class="container" id="container-contacto-1">
+                <h2>CONTACTENOS</h2>
+                <table border="1" class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th><h5>Dirección</h5></th>
+                            <th><h5>Teléfono - Correo</h5></th>
+                            <td>Horario de atención al público.</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Calle 6 # 22 - 09</td>
+                           
+
+                            <td>(601) 3177980
+                                cdegalapa@gmail.com
+                            </td>
+                            <td>Lun - Vie    08:00 am - 03:00 pm </td>
+                        </tr>
+
+                        <tr>
+                            <td><h6>Galapa- Atlántico.</h6></td>
+                            <td>cootragal_1980@hotmail.com</td>
+                            <td>Sábado       08:30 am - 11:30 am</td>
+                        </tr>
+
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
 
         </div>
        <!-- FIN CONTACTENOS-->
