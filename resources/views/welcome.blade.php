@@ -192,7 +192,7 @@
             } 
 
 
-            @media (min-width: 1201px) { /* Ajusta el tamaño del texto para pantallas grandes */ 
+           
 
 
                
@@ -407,10 +407,12 @@
 
                     /*background-color: rgba(56, 56, 56, 0);*/
                     
-                    background-image: linear-gradient(#f0f0f0, rgba(172, 172, 172, 0.84)),
+                    background-image: linear-gradient(#f0f0f0, rgba(255, 255, 255, 0.84),  rgba(255, 255, 255, 0.84)),
                     url("/img/banner/1.jpg");
+                    
+        
                     width: 100%;
-                    height: 410px;
+                    height: 510px;
                     margin-top: -10px;
                     margin-left: auto;
                     background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
@@ -423,12 +425,12 @@
                 }
 
                 #grad {
-                    background-image: linear-gradient(#f0f0f0,rgb(255, 255, 255));
+                    background-image: linear-gradient(#f0f0f0,rgb(8, 255, 49));
                     margin-top: 34.5%;
                 }
 
                 #txt-servicios{
-                        margin-top: -20%;
+                        margin-top: -25%;
                         margin-left: 45%;;
                         font-size: 56px;
                         width: 200px;;
@@ -473,12 +475,15 @@
                 /**inicio configuracion de carrusel*/
 
                 #img-carrusel{
-                width:auto; 
+                width: 500px; 
                 height:585px;
-                margin-top:2%; 
+                margin-top: 6.8%; 
                 background-color: ; 
                 }
 
+                .carousel-control-prev{
+                    margin-top: 100px;
+                }
 
                 /**fin configuracion de carrusel*/
 
@@ -776,13 +781,13 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/banner/3.jpg" id="img-carrusel" alt="Los Angeles" class="d-block" style="width:100%">
+                <img src="img/banner/3.jpg" id="img-carrusel" alt="Los Angeles" class="d-block" style="width:80%">
             </div>
             <div class="carousel-item">
-                <img src="img/banner/4.jpg" id="img-carrusel" alt="Chicago" class="d-block" style="width:100%">
+                <img src="img/banner/4.jpg" id="img-carrusel" alt="Chicago" class="d-block" style="width:40%">
             </div>
             <div class="carousel-item">
-                <img src="img/banner/5.jpg" id="img-carrusel" alt="New York" class="d-block" style="width:100%">
+                <img src="img/banner/5.jpg" id="img-carrusel" alt="New York" class="d-block" style="width:40%">
             </div>
             </div>
 
