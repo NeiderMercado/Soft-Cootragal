@@ -474,11 +474,86 @@
 
                 /**inicio configuracion de carrusel*/
 
-                #img-carrusel{
+                #img-carrusel-1{
                 width: 500px; 
-                height:585px;
-                margin-top: 6.8%; 
+                height:790px;
+                margin-top: ; 
+                background-color: 5%; 
+                }
+
+                #img-carrusel-2{
+                width: 580px; 
+                height:690px;
+                margin-top: 45px; 
                 background-color: ; 
+                border-top-left-radius: 500px;
+                border-top-right-radius: 500px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                margin-left: 27%;
+
+                }
+
+                #carrusel-comentario-conductor{
+                    width: 660px;
+                    height: 250px;
+                    background-color: #f5f4f4;
+                    margin-top: -20%;
+                    margin-left: 52%;
+                    position: absolute;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    box-shadow: -10px -10px #e8e8e8; /* Relieve de contendor */
+                }
+
+
+
+                #carrusel-comentario-conductor-1{
+                    width: 600px;
+                    height: 200px;
+                    background-color: ;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                    position: ;
+                }
+
+
+                #carrusel-comentario-conductor-2{
+                    width: 670px;
+                    height: 250px;
+                    background-color: #f5f4f4;
+                    margin-top: -15%;
+                    margin-left: 55%;
+                    position: absolute;
+                    box-shadow: -10px -10px #e8e8e8; /* Relieve de contendor */
+                }
+
+
+                #carrusel-comentario-conductor-3{
+                    width: 600px;
+                    height: 200px;
+                    background-color: #f5f4f4;
+                    margin-top: 15px;
+                    margin-left: 30px;
+                    position: absolute;
+                    
+                }
+
+                .carousel-item{
+                    background-color:rgb(207, 207, 207);
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0)),
+                    url("/img/fondos/1.png");
+                    background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
+                    background-size: cover; /*Caracteristica que cubre todo el contenedor*/
+                    margin-left: -1px;
+                    margin-top: 6.8%; 
+                    height: 780px;
+                }
+
+                #carrusel-comentario-relieve{
+
                 }
 
                 .carousel-control-prev{
@@ -486,6 +561,37 @@
                 }
 
                 /**fin configuracion de carrusel*/
+                #table-contacto{
+                    width: 80%;
+                    background-color: ;
+                }
+
+                #table-3{
+                    background-color: blue;
+                }
+
+
+                #container-contacto{
+                    background-color: ;
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0)),
+                    url("/img/fondos/1.png");
+                    width: 100%;
+                    height: 900px;
+                    margin-top: -1.3%;
+                }
+
+                #container-contacto-1{
+                    background-color: ;
+                    width: 60%;
+                    margin-top: -40%;
+                    margin-left: 25%;
+                    
+       
+                }
+
+                #txt-contacto{
+                   margin-left: 35%;
+                }
 
                 body {
                     font-family: Garamond, serif;
@@ -781,14 +887,61 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/banner/3.jpg" id="img-carrusel" alt="Los Angeles" class="d-block" style="width:80%">
+                <img src="img/banner/3.jpg" id="img-carrusel-1" alt="Los Angeles" class="d-block" style="width:100%">
+                <div id="carrusel-comentario-conductor-2">
+                    <div id="carrusel-comentario-conductor-3">
+                        <h4 >"Contamos con conductores altamente calificados, comprometidos con ofrecer una conducción segura, 
+                            confiable y eficiente. Su profesionalismo y experiencia garantizan un servicio de calidad, 
+                            permitiéndonos transportar a nuestros usuarios con total comodidad, puntualidad y confianza."
+                            
+                        </h4>
+                        _____
+
+                        <h5 style="font-weight: bold;">
+                        Amin Nazzer. Gerente.
+                        </h5>
+                    </div>
+      
+                </div>
             </div>
+            
+
             <div class="carousel-item">
-                <img src="img/banner/4.jpg" id="img-carrusel" alt="Chicago" class="d-block" style="width:40%">
+                <img src="img/banner/4.jpg" id="img-carrusel-2" alt="Chicago" class="d-block">
+                <div id="carrusel-comentario-conductor">
+                    <div id="carrusel-comentario-conductor-1">
+                        <h4 >"Con más de 13 años al volante, agradezco a la cooperativa por su confianza y apoyo durante todo este tiempo. 
+                                Ha sido un honor contribuir a un transporte seguro y confiable para todos nuestros pasajeros."
+                            
+                        </h4>
+                        _____
+
+                        <h5 style="font-weight: bold;">
+                        Félix Gutiérrez. Conductor
+                        </h5>
+                    </div>
+      
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="img/banner/5.jpg" id="img-carrusel" alt="New York" class="d-block" style="width:40%">
-            </div>
+                <div class="carousel-item">
+                    <img src="img/banner/5.jpg" id="img-carrusel-2" alt="New York" class="d-block" >
+                        <div id="carrusel-comentario-conductor">
+                        <div id="carrusel-comentario-conductor-1">
+                            <h4 >"Valoro enormemente la cooperativa de transporte por haberme brindado la oportunidad de crecer como conductor y profesional. 
+                                Su apoyo ha sido clave para mejorar y ofrecer un servicio de calidad a los pasajeros. 
+                                Me siento orgulloso de ser parte de este equipo."
+                                
+                            </h4>
+                            _____
+
+                            <h5 style="font-weight: bold;">
+                            Robinson Jr. Ojeda. Conductor
+                            </h5>
+                        </div>
+        
+                    </div>
+                    
+                </div>
             </div>
 
             <!-- Left and right controls/icons -->
@@ -806,41 +959,66 @@
         <!-- INICIO CONTACTENOS-->
 
 <br>
-        <div class="container" id="container-contacto">
-            <div class="container" id="container-contacto-1">
-                <h2>CONTACTENOS</h2>
-                <table border="1" class="table table-borderless">
+        <div class="" id="container-contacto">
+        </div>
+            <div class="" id="container-contacto-1">
+                <h1 id="txt-contacto">Contáctenos</h1>
+
+                <table id="table-contacto" class=" table-borderless">
                     <thead>
                         <tr>
-                            <th><h5>Dirección</h5></th>
-                            <th><h5>Teléfono - Correo</h5></th>
-                            <td>Horario de atención al público.</td>
+                        <th scope="col"><h2>Dirección</h2></th>
+                        <th scope="col"><h2>Teléfono</h2></th>
+                        <th scope="col"><h2>Horario de atención al público</h2></th>
                         </tr>
                     </thead>
                     <tbody>
+                        <tr><td colspan="4"></td></tr>
+                        <tr><td colspan="4"></td></tr>
 
                         <tr>
-                            <td>Calle 6 # 22 - 09</td>
-                           
-
-                            <td>(601) 3177980
-                                cdegalapa@gmail.com
-                            </td>
-                            <td>Lun - Vie    08:00 am - 03:00 pm </td>
+                            <td>Calle 6 N° 22 - 09</td>
+                            <td>(605) 3177980</td>
+                            <td>Lun - Vie      08:00 am - 03:00 pm</td>
                         </tr>
-
                         <tr>
-                            <td><h6>Galapa- Atlántico.</h6></td>
+
+                            <td>Galapa - Atlántico</td>
                             <td>cootragal_1980@hotmail.com</td>
-                            <td>Sábado       08:30 am - 11:30 am</td>
-                        </tr>
+                            <td>Sábado      08:30 am - 11:30 am</td>
 
-                        <tr></tr>
+                        </tr>
+                        <tr>
+
+                        </tr>
                     </tbody>
                 </table>
+
+                <br>
+                <br>
+
+
+
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                    var setting = {"query":"COOTRAGAL, Calle 6, Galapa, Atlántico, Colombia","width":916,"height":417,"satellite":false,"zoom":19,"placeId":"ChIJX4gU7sfV9Y4RcU4SOaSh8As","cid":"0xbf0a1a439124e71","coords":[10.9042314,-74.8828245],"cityUrl":"/colombia/barranquilla-15076","cityAnchorText":"Map of Barranquilla (Atlantico), Atlántico, Colombia","lang":"es-es","queryString":"COOTRAGAL, Calle 6, Galapa, Atlántico, Colombia","centerCoord":[10.9042314,-74.8828245],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1206601"};
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=1206601';
+                    s.async = true;
+                    s.onload = function (e) {
+                    window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                })();</script></div>
+
+            <br>
+
             </div>
 
-        </div>
        <!-- FIN CONTACTENOS-->
+
+       
     </body>
 </html>
