@@ -597,27 +597,43 @@
                 /*/
                 Inicio Estilos de contactenos
                 */
-                #div-direccion{
-                    background-color: red;
+
+                #contenedor-informacion{
+                    background-color: ; 
+                    height: 10%;
+                    margin-top: 3%
+                }
+                #div-contactenos{
+                    background-color: ;
                     width: 10%;
-                    margin-left: 25%;
+                    margin-left: 45%;
+                    margin-top: -40%;
+                
+                }
+
+                #div-direccion{
+                    background-color: ;
+                    width: 10%;
+                    margin-left: 31%;
 
                 }
 
                 #div-telefono{
-                    background-color: blue;
+                    background-color: ;
                     width: 10%;
-                    margin-left: 45%;
-                    margin-top: -5.8%;
+                    margin-left: 44.3%;
+                    margin-top: -7%;
+                    
 
 
                 }
                 
                 #div-horario{
-                    background-color: green;
+                    background-color: ;
                     width: 15%;
-                    margin-left: 65%;
-                    margin-top: -5.8%;
+                    margin-left: 58%;
+                    margin-top: -7.1%;
+                    
                     
 
                 }
@@ -994,39 +1010,38 @@
 <br>
         <div class="" id="container-contacto">
         </div>
-            <div class="" id="container-contacto-1">
-                <h1 id="txt-contacto">Contáctenos</h1>
+             <!-- INICIO DIV CONTACTENOS-->
 
-                <table id="table-contacto" class=" table-borderless">
-                    <thead>
-                        <tr>
-                        <th scope="col"><h2>Dirección</h2></th>
-                        <th scope="col"><h2>Teléfono</h2></th>
-                        <th scope="col"><h2>Horario de atención al público</h2></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td colspan="4"></td></tr>
-                        <tr><td colspan="4"></td></tr>
+                <div class="" id="div-contactenos">
+                        <h1 id="">Contáctenos</h1>
+                    </div>
 
-                        <tr>
-                            <td>Calle 6 N° 22 - 09</td>
-                            <td>(605) 3177980</td>
-                            <td>Lun - Vie      08:00 am - 03:00 pm</td>
-                        </tr>
-                        <tr>
+                <div id="contenedor-informacion">
+                    <div class="" id="div-direccion">
+                        <h3 id="">Dirección</h3> 
+                        <br>           
+                        <h6>Calle 6 N° 22 - 09</h6>
+                        <h6>Galapa - Atlantico</h6>
+                    </div>
 
-                            <td>Galapa - Atlántico</td>
-                            <td>cootragal_1980@hotmail.com</td>
-                            <td>Sábado      08:30 am - 11:30 am</td>
+                    <div class="" id="div-telefono">
+                        <h3>Teléfono</h3>
+                        <br>    
+                        <h6>(605)3177980</h6>
+                        <h6>cootragal_1980@hotmail.com</h6>
+                    </div>
 
-                        </tr>
-                        <tr>
+                    <div class="" id="div-horario">
+                        <h3>Horario de atención al cliente</h3>
+                        <br>    
+                        <h6>Lunes - Vie 08:00 am - 03:00 pm</h6>
+                        <h6>Sabado 08:30 am - 11:30 am</h6>
+                    </div>
 
-                        </tr>
-                    </tbody>
-                </table>
+                </div>
 
+                    <!-- FIN DIV CONTACTENOS-->
+            
                 <br>
                 <br>
 
@@ -1048,38 +1063,7 @@
 
             <br>
 
-            </div>
-
-            <!-- INICIO DIV CONTACTENOS-->
-
-            <div>
-
-                <div class="" id="div-contactenos">
-                    <h1 id="div-contactenos">Contáctenos</h1>
-                </div>
-
-                <div class="" id="div-direccion">
-                    <h2 id="">Dirección</h2>
-                    <h5>Calle 6 N° 22 - 09</h5>
-                    <h5>Galapa - Atlantico</h5>
-                </div>
-                
-                <div class="" id="div-telefono">
-                    <h2>Teléfono</h2>
-                    <h5>(605)3177980</h5>
-                    <h5>cootragal_1980@hotmail.com</h5>
-                </div>
-
-                <div class="" id="div-horario">
-                    <h2>Horario de atención al cliente</h2>
-                    <h5>Lunes - Vie 08:00 am - 03:00 pm</h5>
-                    <h5>Sabado 08:30 am - 11:30 am</h5>
-                </div>
-
-            </div>
-             
-            <!-- FIN DIV CONTACTENOS-->
-
+            
        <!-- FIN CONTACTENOS-->
 
        
