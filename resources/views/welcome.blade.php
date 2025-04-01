@@ -600,9 +600,11 @@
 
                 #contenedor-informacion{
                     background-color: ; 
-                    height: 10%;
+                    height: 210px;
                     margin-top: 3%
+
                 }
+
                 #div-contactenos{
                     background-color: ;
                     width: 10%;
@@ -615,6 +617,7 @@
                     background-color: ;
                     width: 10%;
                     margin-left: 31%;
+                    margin-top: -20px;
 
                 }
 
@@ -622,7 +625,7 @@
                     background-color: ;
                     width: 10%;
                     margin-left: 44.3%;
-                    margin-top: -7%;
+                    margin-top: -6.3%;
                     
 
 
@@ -632,10 +635,13 @@
                     background-color: ;
                     width: 15%;
                     margin-left: 58%;
-                    margin-top: -7.1%;
+                    margin-top: -6.5%;                  
                     
-                    
+                }
 
+                #maps{
+                    margin-left: 29%;
+                    margin-top: -3%;
                 }
 
                 /*/Fin Estilos de contactenos*/
@@ -643,7 +649,7 @@
 
 
                 body {
-                    font-family: Garamond, serif;
+                    font-family: Courier, serif;
                 }
 
 
@@ -1046,7 +1052,7 @@
                 <br>
 
 
-
+            <div id="maps">
                 <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
                     <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
                     var setting = {"query":"COOTRAGAL, Calle 6, Galapa, Atlántico, Colombia","width":916,"height":417,"satellite":false,"zoom":19,"placeId":"ChIJX4gU7sfV9Y4RcU4SOaSh8As","cid":"0xbf0a1a439124e71","coords":[10.9042314,-74.8828245],"cityUrl":"/colombia/barranquilla-15076","cityAnchorText":"Map of Barranquilla (Atlantico), Atlántico, Colombia","lang":"es-es","queryString":"COOTRAGAL, Calle 6, Galapa, Atlántico, Colombia","centerCoord":[10.9042314,-74.8828245],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1206601"};
@@ -1060,7 +1066,7 @@
                     var to = d.getElementsByTagName('script')[0];
                     to.parentNode.insertBefore(s, to);
                 })();</script></div>
-
+            </div>
             <br>
 
             
