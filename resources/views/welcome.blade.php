@@ -231,6 +231,11 @@
                     height: 65%;
                 }
 
+                #logo-2{
+                    width: 90%;
+                    height: 65%;
+                }
+
                 #logo-3{
                     width: 65%;
                     height: 55%;
@@ -425,7 +430,7 @@
                 }
 
                 #grad {
-                    background-image: linear-gradient(#f0f0f0,rgb(8, 255, 49));
+                    background-image: linear-gradient(#f0f0f0,rgb(7, 223, 43));
                     margin-top: 34.5%;
                 }
 
@@ -573,8 +578,9 @@
 
                 #container-contacto{
                     background-color: ;
-                    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0)),
-                    url("/img/fondos/1.png");
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.59)),
+                    url("/img/fondos/2.jpg");
+                    background-size: cover;
                     width: 100%;
                     height: 900px;
                     margin-top: -1.3%;
@@ -640,7 +646,7 @@
                 }
 
                 #maps{
-                    margin-left: 29%;
+                    margin-left: 26%;
                     margin-top: -3%;
                 }
 
@@ -657,7 +663,7 @@
                 }
 
                 body {
-                    font-family: 'Avenir', sans-serif;
+                    font-family: Brandon grostesque, serif;
                     font-weight: 300; /* Light weight */
                 }
 
@@ -819,7 +825,7 @@
                     <button id="btn-control-seleecion" class="btn btn-light" type="button">
                                 
                         <h4>La Cooperativa</h4>
-                        <img id="logo-1" src="img/logos-botones/2.png" alt="La Cooperativa">
+                        <img id="logo-2" src="img/logos-botones/2.png" alt="La Cooperativa">
                         <div class="btn btn-secondary">Ver más</div>
                     </button>
 
