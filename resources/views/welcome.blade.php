@@ -648,13 +648,23 @@
 
 
 
+                @font-face {
+                font-family: 'Avenir';
+                src: url('fonts/Avenir-Light.woff2') format('woff2'),
+                    url('fonts/Avenir-Light.woff') format('woff');
+                font-weight: 300; /* Light weight */
+                font-style: normal;
+                }
+
                 body {
-                    font-family: Courier, serif;
+                    font-family: 'Avenir', sans-serif;
+                    font-weight: 300; /* Light weight */
                 }
 
 
 
-            }
+
+            
 
 
             @media (min-width: 1400px) and (max-width: 1676px) {
