@@ -38,6 +38,8 @@ Route::get('/detalle/{id}', [NovedadesCamarasController::class, 'detalle'])->nam
 Route::get('/delete/{id}', [NovedadesCamarasController::class, 'delete'])->name('eliminar.delete');
 Route::get('Liquidador/index', [LiquidadorController::class, 'index'])->name('Liquidador');
 Route::get('CamarasTask/index', [CamarasTaskController::class, 'index'])->name('CamarasTask.index');
+
+
 Route::get('CamarasTask/store/{id}', [CamarasTaskController::class, 'store'])->name('CamarasTask.store');
 Route::get('CamarasTask/update/{id}', [CamarasTaskController::class, 'update'])->name('task.update');
 Route::post('CamarasTask/store/', [CamarasTaskController::class, 'store'])->name('createtaskdone.store');

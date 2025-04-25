@@ -14,7 +14,7 @@
 
 
 <!-- Scripts -->
-@vite(['resources/css/app.css'])
+
 
 </head>
 <body>
@@ -22,6 +22,9 @@
 <div class="container p-4 mb-2 bg-white text-dark">
 <h2 id="titulos">AGREGAR NUEVA REVISIÓN/NOVEDAD</h2>
 <br>
+    <div class="parent">
+
+        <div class="div1">
 
                 <form method="post" id="app" action="{{ route('prueba.store')}}" enctype="multipart/form">
                     @csrf
@@ -30,7 +33,7 @@
                             <input type="date" autocomplete="off" class="form-control" id="form-date" name="date_activi" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1" require>Interno-Placa</label>
+                            <label for="exampleFormControlSelect1" require>Interno</label>
                             <select class="form-control" id="form-int-placa" name="int-placa" placeholder="Seleccionar" required>
                             <option value=""></option>
                             <option>01 - WEO675</option>
@@ -38,6 +41,8 @@
                             <option>3 - STS</option>
                             <option>4</option>
                             <option>5</option>
+                            <option>022 - TDU881</option>
+
                             </select>
                         </div>
 
@@ -58,7 +63,8 @@
                             <textarea class="form-control" name="detalle_actividad" id="exampleFormControlTextarea1" rows="3" required></textarea>
                         </div>
 
-                        <label for="exampleFormControlSelect2" require>Recursos utilizados:</label><br>
+       </div>
+       <div class="div2">
 
                         <table class="table table-bordered border-primary" id="table-element">
                             <thead class="table-dark">
@@ -91,16 +97,19 @@
                             </tbody>
 
                         </table>
+        </div>
+            <div class="form-group">
+                <br>
+                <label for="">Soportes</label>
+                <br>
+                <input type="file" class="btn btn-primary" id="soporte" name="soporte" required>
+            </div>
+    </div>
+
+                        
 
                         <div class="form-group">
-                            <br>
-                            <label for="">Soportes</label>
-                            <br>
-                            <input type="file" id="soporte" name="soporte" required>
-                        </div>
-
-                        <div class="form-group">
-                             <input type="hidden" name="user_responsable" value="<?php $usuario=Auth::user()->name; echo($usuario); ?>">
+                             <input type="hidden" name="responsable_tarea" value="<?php $usuario=Auth::user()->name; echo($usuario); ?>">
                              <input type="hidden" name="actividad" value="Revision">
                              <input type="hidden" name="estado" value="Realizado">
                              <input type="hidden" name="tipo" value="M">
@@ -109,14 +118,12 @@
                         </div>
                     
                             <br>
-                        <div class="" id="div_botones">
-
-                            <a href="{{ route('1_camaras.index')}}" class="btn btn-danger"><i class="bi bi-x-circle"></i> CANCELAR</a>
+                        <div class="" id="div_botones"> 
                             <button type="submit" class="btn btn-success">
                                 <i class="bi bi-floppy">
                                 <a id="btn-save-modal"></i> GUARDAR</a>
                             </button>
-                            
+                            <a href="{{ route('1_camaras.index')}}" class="btn btn-danger"><i class="bi bi-x-circle"></i> CANCELAR</a>  
                        
                         </div>
                     </div> 
@@ -133,12 +140,36 @@
 
         <!-- CSS -->
         <style> 
-                #table-element{
+                .parent {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
 
-                    width: 400px;
                     
+                .div1 {
+                    grid-row: span 2 / span 2;
+                    background-color: ;
+                    width: 50%;
+
 
                 }
+
+                .div2 {
+                    grid-row: span 2 / span 2;
+                    background-color: ;
+
+                }
+
+        
+                
+
+                #table-element{
+                    width: 400px;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                }
+
 
                 #txt-element{
                     width: 50px;

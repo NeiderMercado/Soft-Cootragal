@@ -177,7 +177,7 @@
 
                     </div>
                     <div class="modal-footer">
-                    <input type="hidden" name="user_responsable" value="<?php $usuario=Auth::user()->name; echo($usuario); ?>">
+                    <input type="hidden" name="creador_tarea" value="<?php $usuario=Auth::user()->name; echo($usuario); ?>">
                              <input type="hidden" name="tipo" value="A">
                              <input type="hidden" name="estado" value="Pendiente">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -187,65 +187,53 @@
                     </div>
                 </div>
             </div>  
-            </form>  
-                
-
+            </form> 
+            
+            <!-- End Modal -->
 
             <div class="tab-content">
-            
-                <div id="home" class="container tab-pane active"><br>
-                @foreach ($task_new as $task_new)
-                    <div class="alert alert-primary" class="card" style="width: 100%;">
-                        <div class="card-body">
-                          <form action="{{ route('task.update', $task_new->id)}}" method="get">
-                            <center><h6 class="card-title">Tarea N°: {{$task_new->id}} - {{$task_new->interno}} </h6></center>
-                            
-                                <h6 class="card-title">Vehículo: {{$task_new->interno}} </h6><br>
-                                    <p class="card-text">Detalle: <br> {{$task_new->observaciones}}</p>
-                                    <h6>Tipo de actividad: {{$task_new->actividad}}</h6>
+            <div id="home" class="container tab-pane active"><br>
 
-                                <h6 class="card-subtitle mb-2 text-body-secondary">Fecha de creación: {{$task_new->fecha_novedad}}</h6>
-                            <br>
-                            
-                                @if($task_new->actividad == "Revision")
-                                <?php
-                                    $id_task = $task_new->id;
-                                    
-                                ?>
- 
-                                <input type="hidden" value="<?php echo $id_task ?>">
+                    @if (empty($task_new))
+                        <div class="alert alert-success text-center">
+                            <strong>No hay datos que mostrar.</strong>
+                        </div>
+                    @else
+                    @foreach ($task_new as $task)
+                        <div class="alert alert-primary card" style="width: 100%;">
+                            <div class="card-body">
+                                <center><h6 class="card-title">Tarea N°: {{$task->id}} - {{$task->interno}}</h6></center>
 
-                                    <a href="{{ route('CamarasTask.store',$task_new->id) }}"  class="btn btn-primary"><i class="bi bi-arrow-right-circle"></i>  Realizar</a>
+                                <h6 class="card-title">Vehículo: {{$task->interno}}</h6><br>
+                                <p class="card-text">Detalle: <br> {{$task->observaciones}}</p>
+                                <h6>Tipo de actividad: {{$task->actividad}}</h6>
 
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Fecha de creación: {{$task->fecha_novedad}}</h6>
+                                <br>
 
-                                @elseif ($task_new->actividad == "Aforo")
-
-                                    <a href="{{ route('task.update', $task_new->id)}}" type="submit" class="btn btn-success"><i class="bi bi-check2-circle"></i> Tarea realizada</a>
-
-
+                                @if($task->actividad == "Revision")
+                                    <input type="hidden" value="{{ $task->id }}">
+                                    <a href="{{ route('CamarasTask.store', $task->id) }}" class="btn btn-primary">
+                                        <i class="bi bi-arrow-right-circle"></i> Realizar
+                                    </a>
+                                @elseif ($task->actividad == "Aforo")
+                                    <a href="{{ route('task.update', $task->id) }}" type="submit" class="btn btn-success">
+                                        <i class="bi bi-check2-circle"></i> Tarea realizada
+                                    </a>
                                 @endif
 
-                                <table>
-                                    <th>
-                                        <td></td>
-                                    </th>
-                                </table>
-                         
-                            <br>                               
-                            
+                                <br>
+                            </div>
                         </div>
-                        
-                    </div>
-                    <br>
+                        <br>
                     @endforeach
+                @endif
                 
-                </div>
-                </form>
-            
             </div>
-
-
         </div>
+    </div>
+
+
 
 
 <!-- TAREAS PENDIENTES -->
@@ -254,7 +242,16 @@
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
      <div class="tab-content">
             <div id="home" class="container tab-pane active"><br>
-              @foreach ($task_pending as $pending)
+            
+            @if (empty($task_pending))
+                <div class="alert alert-success text-center">
+                    <strong>No hay datos que mostrar.</strong>
+                </div>
+            @else
+
+            @foreach ($task_pending as $pending)
+              
+              
                 <div class="alert alert-warning" class="card" style="width: 100%;">
                     <div class="card-body">
                       <form action="{{ route('task.update', $pending->id)}}" method="get">
@@ -280,26 +277,36 @@
 
                                 @elseif ($pending->actividad == "Aforo")
 
+
+
                                     <a href="{{ route('task.update', $pending->id)}}" type="submit" class="btn btn-success"><i class="bi bi-check2-circle"></i> Tarea realizada</a>
 
-
+                                
                                 @endif
                         
                     </div>
                 </div>
                 <br>
             @endforeach
+            @endif
             </div>
-            </form>
+
         </div>
 
   </div>
+  </form>
 
 <!-- TAREAS VENCIDAS -->
 
   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
     <div class="tab-content">
-                <div id="home" class="container tab-pane active"><br>
+        <div id="home" class="container tab-pane active"><br>
+
+            @if (empty($task_dead))
+                <div class="alert alert-success text-center">
+                    <strong>No hay datos que mostrar.</strong>
+                </div>
+            @else
                 @foreach ($task_dead as $dead_task)
                     <div class="alert alert-danger" class="card" style="width: 100%;">
                         <div class="card-body">
@@ -336,9 +343,10 @@
                     </div>
                     <br>
                 @endforeach
+                @endif
                 </div>
-                </form>
-            </div>
+            </form>
+        </div>
   </div>
 
 
@@ -347,109 +355,117 @@
   <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
      <div class="tab-content">
                 <div id="home" class="container tab-pane active"><br>
-                @foreach ($task_done as $done_task)
-                    <div class="alert alert-success" class="card" style="width: 100%;">
-                        <div class="card-body">
-                            
-                            <center><h6 class="card-title">Tarea N°: {{$done_task->id}} - {{$done_task->interno}} </h6></center>
-                            
-                            <h6 class="card-title">Vehículo: {{$done_task->interno}} </h6><br>
-                            
-                            <p class="card-text">Detalle: <br> {{$done_task->observaciones}}</p>
-                            <h6>Tipo de actividad: {{$done_task->actividad}}</h6>
 
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Fecha de creación: {{$done_task->fecha_novedad}}</h6>
-                            <br>
-
-
-                                <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldetalletask">
-                                         <i class="bi bi-card-checklist"></i> Detalle
-                                      
-                                    </button>
-
-                                <!-- Modal -->
-                                    <div class="modal fade" id="modaldetalletask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Detalle de actividad</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-
-                                        <form method="POST" id="app" action="{{ route('createnewtask.create')}}" enctype="multipart/form">
-                                        @csrf
-
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Interno</label>
-                                                    <input type="text" class="form-control" name="int-placa" value="{{$done_task->interno}}" disabled>
-                                                    </div>
-                                                    <div class="form-group col-md-6">
-                                                    <label for="inputPassword4">Conductor</label>
-                                                    <input type="text" class="form-control" name="conductor" value="{{$done_task->conductor}}" disabled>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="inputAddress">Detalle de actividad: </label>
-                                                    <input type="text" class="form-control" name="observaciones" value="{{$done_task->detalle_actividad}}" disabled>
-                                                </div>
-
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-6">
-                                                    <label for="inputCity">Fecha de la actividad: </label>
-                                                    <input type="date" class="form-control" name="date_activi" value="{{$done_task->fecha_realizado}}" disabled>
-                                                    </div>
-                                                    <div class="form-group col-md-4">
-                                                    <label for="inputState">Tipo de actividad</label>
-                                                    <input type="text" class="form-control" name="tipo_acti" value="{{$done_task->actividad}}" disabled>
-                                                    </div>
-                                                    
-                                                </div>
-
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Responsable de la tarea: </label>
-                                                    <input type="text" class="form-control" name="int-placa" value="{{$done_task->responsable_tarea}}" disabled>
-                                                    </div>
-                                                    <div class="form-group col-md-6">
-                                                    <label for="inputPassword4">Responsable de la revisión: </label>
-                                                    <input type="text" class="form-control" name="conductor" value="{{$done_task->responsable_actividad}}" disabled>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Soporte: </label>
-                                                    <img src="{{ asset('storage/' . $done_task->soportes) }}" alt=" Soporte revisión.">
-                                                    </div>
-
-                                                </div>
-                                      
-                                        </div>
-                                        <div class="modal-footer">
-                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>  
-                                </form>  
-                                                        
-                            
+                @if (empty($task_done))
+                        <div class="alert alert-success text-center">
+                            <strong>No hay datos que mostrar.</strong>
                         </div>
-                    </div>
-                    <br>
-                @endforeach
+                @else
+                        @foreach ($task_done as $done_task)
+                            <div class="alert alert-success" class="card" style="width: 100%;">
+                                <div class="card-body">
+                                    
+                                    <center><h6 class="card-title">Tarea N°: {{$done_task->id}} - {{$done_task->interno}} </h6></center>
+                                    
+                                    <h6 class="card-title">Vehículo: {{$done_task->interno}} </h6><br>
+                                    
+                                    <p class="card-text">Detalle: <br> {{$done_task->observaciones}}</p>
+                                    <h6>Tipo de actividad: {{$done_task->actividad}}</h6>
+
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Fecha de creación: {{$done_task->fecha_novedad}}</h6>
+                                    <br>
+
+
+                                        <!-- Button trigger modal -->
+                                            <button type="button" name="{{$done_task->id}}" class="btn btn-success" data-toggle="modal" data-target="#modaldetalletask-{{ $done_task->id }}">
+                                                <i class="bi bi-card-checklist"></i> Detalle
+                                            
+                                            </button>
+
+                                        <!-- Modal -->
+                                            <div class="modal fade" id="modaldetalletask-{{ $done_task->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Detalle de actividad</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                            <label for="inputEmail4">Interno</label>
+                                                            <input type="text" class="form-control" name="int-placa" value="{{$done_task->interno}}" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                            <label for="inputPassword4">Conductor</label>
+                                                            <input type="text" class="form-control" name="conductor" value="{{$done_task->conductor}}" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputAddress">Detalle de actividad: </label>
+                                                            <input type="text" class="form-control" name="observaciones" value="{{$done_task->detalle_actividad}}" disabled>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                            <label for="inputCity">Fecha de la actividad: </label>
+                                                            <input type="date" class="form-control" name="date_activi" value="{{$done_task->fecha_realizado}}" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                            <label for="inputState">Tipo de actividad</label>
+                                                            <input type="text" class="form-control" name="tipo_acti" value="{{$done_task->actividad}}" disabled>
+                                                            </div>
+                                                            
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                            <label for="inputEmail4">Asignador de la tarea: </label>
+                                                            <input type="text" class="form-control" name="int-placa" value="{{$done_task->creador_tarea}}" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                            <label for="inputPassword4">Responsable de la revisión: </label>
+                                                            <input type="text" class="form-control" name="conductor" value="{{$done_task->responsable_tarea}}" disabled>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                            <label for="inputEmail4">Soporte: </label>
+                                                            <img src="{{ asset('storage/' . $done_task->soportes) }}" alt=" Soporte revisión.">
+                                                            </div>
+
+                                                        </div>
+                                            
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                            
+                                                            
+                                    
+                                </div>
+                            </div>
+                            <br>
+                                                        
+                        @endforeach
+                        {{ $task_done->links() }} 
+                @endif
                 </div>
+                         
             </div>
 
 
   </div>
 </div>
+
+      
 
     
 
