@@ -108,10 +108,10 @@
 <br>
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Nuevos</button>
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Pendientes</button>
-    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Vencidos</button>
-    <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Realizados</button>
+    <button class="nav-link active" id="nav-nuevos-tab" data-bs-toggle="tab" data-bs-target="#nav-nuevos" type="button" role="tab" aria-controls="nav-nuevos" aria-selected="true">Nuevos</button>
+    <button class="nav-link" id="nav-pendientes-tab" data-bs-toggle="tab" data-bs-target="#nav-pendientes" type="button" role="tab" aria-controls="nav-pendientes" aria-selected="false">Pendientes</button>
+    <button class="nav-link" id="nav-vencidos-tab" data-bs-toggle="tab" data-bs-target="#nav-vencidos" type="button" role="tab" aria-controls="nav-vencidos" aria-selected="false">Vencidos</button>
+    <button class="nav-link" id="nav-realizados-tab" data-bs-toggle="tab" data-bs-target="#nav-realizados" type="button" role="tab" aria-controls="nav-realizados" aria-selected="false">Realizados</button>
   </div>
 </nav>
 
@@ -119,7 +119,7 @@
 
 <div class="tab-content" id="nav-tabContent">
      <!-- TAREAS NUEVAS -->
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"><br>
+        <div class="tab-pane fade show active" id="nav-nuevos" role="tabpanel" aria-labelledby="nav-nuevos-tab" tabindex="0"><br>
 
              <!-- Button trigger modal -->
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
@@ -233,13 +233,10 @@
         </div>
     </div>
 
-
-
-
 <!-- TAREAS PENDIENTES -->
 
 
-  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+  <div class="tab-pane fade" id="nav-pendientes" role="tabpanel" aria-labelledby="nav-pendientes-tab" tabindex="0">
      <div class="tab-content">
             <div id="home" class="container tab-pane active"><br>
             
@@ -298,7 +295,7 @@
 
 <!-- TAREAS VENCIDAS -->
 
-  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+  <div class="tab-pane fade" id="nav-vencidos" role="tabpanel" aria-labelledby="nav-vencidos-tab" tabindex="0">
     <div class="tab-content">
         <div id="home" class="container tab-pane active"><br>
 
@@ -352,7 +349,7 @@
 
 <!-- TAREAS REALIZADAS -->
 
-  <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+  <div class="tab-pane fade" id="nav-realizados" role="tabpanel" aria-labelledby="nav-realizados-tab" tabindex="0">
      <div class="tab-content">
                 <div id="home" class="container tab-pane active"><br>
 
@@ -455,19 +452,14 @@
                             <br>
                                                         
                         @endforeach
-                        {{ $task_done->links() }} 
                 @endif
                 </div>
-                         
+                  {{ $task_done->links() }}          
             </div>
 
 
   </div>
 </div>
-
-      
-
-    
 
             <script>
                 document.addEventListener('DOMContentLoaded', function() {

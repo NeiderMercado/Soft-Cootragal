@@ -17,7 +17,7 @@ class CamarasTaskController extends Controller
         $task_done = DB::table('novedad_camaras')
         ->where('estado', 'Realizado') // Aplicar filtro
         ->orderBy('ID', 'DESC') // Ordenar por fecha de creación, descendente
-        ->paginate(2); // Paginar con 15 resultados por página
+        ->paginate(5); // Paginar con 15 resultados por página
 
         $task_pending = DB::select('select * from novedad_camaras where estado = "Pendiente"');
         $task_new = DB::select('select * from novedad_camaras WHERE fecha_novedad BETWEEN CURRENT_DATE-2 AND CURRENT_DATE AND estado = "Pendiente"');

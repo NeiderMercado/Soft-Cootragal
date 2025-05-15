@@ -33,684 +33,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 
 
+        <!-- Links de estilos -->
+        <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
 
-        <style>
 
-
-                #div-logo{
-                    align: left;
-
-                    color: red;
-                    border-color: red;
-                   
-                }
-
-                #logo{
-                    height: 100%;
-                    width: 50%;
-                    margin-left: 5%;
-                    margin-top: -1%;
-                }
-
-                #div_botones{
-                    text-align: center;
-                }
-
-                #btn-login{
-                    margin-left: 8%
-                }
-
-                #mynavbar{
-                    margin-left: 35%
-
-                }
-
-                #toggler-responsive{
-                    margin-left: 73%;
-                    margin-top: -15%;
-
-                }
-
-
-
-                #div_presentacion{
-                    position: absolute;
-                    margin-top: 19%;
-                    margin-left: 5%;
-                    color: white;
-                }
-
-
-
-                #txt_subtitulo{
-                    color: white;
-                    font-size: 30px;
-                    margin-top: -10px;
-                }
-
-
-                #img-portada{
-                    width: 100%;
-                    height: 15%;
-                    margin-left: center;
-                }
-
-
-
-                
-
-
-
-
-            @media (max-width: 600px) { /* Ajusta el tamaño del texto para pantallas pequeñas */ 
-
-                #img-portada{
-                    width: 450%;
-                    height: 100%;
-                    margin-left: -250%;
-                    opacity: 0.8;
-                }
-                #contenedor-texto-1{
-                    background-color: ;
-                    margin-top: -90%;
-                    margin-left: 5%;
-                    width: auto;
-                } 
-
-                #txt_titulo{
-                    font-size: 10vw;
-                    color: white;
-                    font-family: cooper hewitt heavy;
-                    font-weight: 900; 
-                   
-                }
-
-                #contenedor-texto-3{
-                    background-color: ;
-                    margin-top: -30%;
-                    margin-left: -95%;
-                                        
-                }
-
-                #logo-potada-text{
-                    width: 25%;
-                    margin-top: -70%;
-                    margin-left: 60%;
-                    
-
-                }
-                #contenedor-texto-2 { 
-                    font-size: 1vw; 
-                } 
-            } 
-
-
-
-
-            @media (min-width: 601px) and (max-width: 1200px) { /* Ajusta el tamaño del texto para pantallas medianas */ 
-                #contenedor-texto-1{
-                    background-color: ;
-                    margin-top: -50%;
-                    margin-left: -20%;
-                    width: auto;
-                } 
-
-                #txt_titulo{
-                    font-size: 4vw;
-                    color: white;
-                    font-family: cooper hewitt heavy;
-                    font-weight: 900; 
-                   
-                }
-
-                #contenedor-texto-3{
-                    background-color: ;
-                    margin-top: -30%;
-                    margin-left: -95%;
-                                        
-                }
-
-                #logo-potada-text{
-                    width: 15%;
-                    margin-left: 23%;
-                    margin-top: -3%;
-
-                }
-
-                #contenedor-texto-2 { 
-                    font-size: 1vw; 
-                } 
-
-                #carusel{
-                    background-color: ;
-                }
-
-                #img-portada{
-                    margin-top: -10%;
-                    height: 10%;
-                }
-            } 
-
-
-           
-
-
-               
-                #contenedor-texto-3{
-                    background-color: ;
-                    margin-top: -30%;
-                    margin-left: -95%;
-                                        
-                }
-
-                #logo-potada-text{
-                    width: 15%;
-                    margin-left: 23%;
-                    margin-top: -3%;
-
-                }
-
-
-                #img-portada{
-                    margin-top: -10%;
-                    height: 3%;
-                }
-
-
-                #btn-control-seleecion{
-                    width: 240px;
-                    height: 280px;
-                    background-color: ;
-                    margin-left: 20%;
-                    border-color: grey;
-                    border-radius: 30px;
-                }
-
-                #logo-1{
-                    width: 80%;
-                    height: 65%;
-                }
-
-                #logo-2{
-                    width: 90%;
-                    height: 65%;
-                }
-
-                #logo-3{
-                    width: 65%;
-                    height: 55%;
-                    border-color: red;
-               
-                }
-
-                #logo-4{
-                    width: 65%;
-                    height: 55%;
-                }
-
-                #tabla-1{
-                    margin-left: 17%;
-                    margin-top: 40px;
-                    width: 65%;
-                    
-                }
-
-                
-                #container-inicio{
-                    background-color: ;
-                    height: 700px;
-                    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-                    url("/img/banner/2.png");
-                    background-size: cover;
-                    
-                }
-
-
-                #contenedor-texto-1{
-                    background-color:;
-                    margin-top:-660px;
-                    margin-left: -15%;
-                    width: auto;
-                    -webkit-text-stroke-width: 2px;
-                    -webkit-text-stroke-color: black;
-                    font-family: Arial;
-                    
-                   
-                } 
-
-
-                #txt_titulo{
-                    font-size: 4vw;
-                    color: white;
-                    font-family: arial;
-                    font-weight: 900;
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: black;
-                   
-                }
-
-                #contenedor-texto-2 { 
-                    font-size:3.53; 
-                    background-color: ;
-                    margin-left: -14%;
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: black;
-                    
-                }
-
-                #txt_subtitulo {
-                    font-size: 30px;
-
-
-                }
-
-                #img-logo-1 {
-                    width:8%;
-                    height:21%;
-                    margin-top:410px;
-                    margin-left: 11%;
-                    
-                }
-
-                #container-operaciones{
-
-                    background-color: #f0f0f0;
-                    
-                    /*background-image: linear-gradient(rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.7)),
-                    url("/img/banner/1.jpg");*/
-                    margin-top: ;
-                    background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
-                    background-size: cover; /*Caracteristica que cubre todo el contenedor*/
-                    background-position: center; /*Caracteristica que centra la imagen*/
-                    opacity: ;
-                    padding: 1.5%;
-                    height: 420px;
-                    
-                }
-
-                /* INICIO DE DIVISOR DIFUMINADO  */
-
-                body
-                    {
-                    margin:0;
-                    padding:0;
-                    background-color:;
-                    }
-
-                    .editorial {
-                    display: flex;
-                    width: 101.62%;
-                    height:10%;
-                    max-height: 10%;
-                    margin-top: 5%;
-                    margin-left: -1%;
-                    }
-
-                    .parallax1 > use {
-                    animation: move-forever1 10s linear infinite;
-                    &:nth-child(1) {
-                        animation-delay: -2s;
-                    }
-                    }
-                    .parallax2 > use {
-                    animation: move-forever2 8s linear infinite;
-                    &:nth-child(1) {
-                        animation-delay: -2s;
-                    }
-                    }
-                    .parallax3 > use {
-                    animation: move-forever3 6s linear infinite;
-                    &:nth-child(1) {
-                        animation-delay: -2s;
-                    }
-                    }
-                    .parallax4 > use {
-                    animation: move-forever4 4s linear infinite;
-                    &:nth-child(1) {
-                        animation-delay: -2s;
-                    }
-                    }
-                    @keyframes move-forever1 {
-                    0% {
-                        transform: translate(85px, 10%);
-                    }
-                    100% {
-                        transform: translate(-90px, 0%);
-                    }
-                    }
-                    @keyframes move-forever2 {
-                    0% {
-                        transform: translate(-90px, 0%);
-                    }
-                    100% {
-                        transform: translate(85px, 0%);
-                    }
-                    }
-                    @keyframes move-forever3 {
-                    0% {
-                        transform: translate(85px, 0%);
-                    }
-                    100% {
-                        transform: translate(-90px, 0%);
-                    }
-                    }
-                    @keyframes move-forever4 {
-                    0% {
-                        transform: translate(-90px, 0%);
-                    }
-                    100% {
-                        transform: translate(85px, 0%);
-                    }
-                    }
-                 /* FIN DE DIVISOR DIFUMINADO  */
-
-
-                
-                /**inicio configuracion de servicios*/
-
-                .cont-img-servicios{
-
-                    /*background-color: rgba(56, 56, 56, 0);*/
-                    
-                    background-image: linear-gradient(#f0f0f0, rgba(255, 255, 255, 0.84),  rgba(255, 255, 255, 0.84)),
-                    url("/img/banner/1.jpg");
-                    
-        
-                    width: 100%;
-                    height: 510px;
-                    margin-top: -10px;
-                    margin-left: auto;
-                    background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
-                    background-size: cover; /*Caracteristica que cubre todo el contenedor*/
-                    background-position: center; /*Caracteristica que centra la imagen*/
-                    opacity: ;
-                    padding: 1.5%;
-                    
-
-                }
-
-                #grad {
-                    background-image: linear-gradient(#f0f0f0,rgb(7, 223, 43));
-                    margin-top: 34.5%;
-                }
-
-                #txt-servicios{
-                        margin-top: -25%;
-                        margin-left: 45%;;
-                        font-size: 56px;
-                        width: 200px;;
-                        background-COLOR: ;
-                }
-
-                #container-descrip-servicios{
-                    margin-top: 3%;
-                    margin-left: 160px;
-                    width: 42%; 
-                    background-color: ;
-                    font-size: 19px;
-                                              
-                }
-
-                #tabla-servicios-1{
-                    margin-left: 55%;
-                    margin-top: -13%;
-                    background-color: ;
-                    width: 40%;
-                    font-size: 150px;
-                                    
-                }
-
-                #btn-servicios{
-                    width: 205px;
-                    height: 250px;
-                    border-radius: 36px;
-                    border-style: solid;
-                    border-color: grey;
-                }
-
-                #logo-5{
-                    width: 109px;
-                    height: 106px;
-                    
-                
-                }
-                /**fin configuracion de servicios*/
-
-
-                /**inicio configuracion de carrusel*/
-
-                #img-carrusel-1{
-                width: 500px; 
-                height:790px;
-                margin-top: ; 
-                background-color: 5%; 
-                }
-
-                #img-carrusel-2{
-                width: 580px; 
-                height:690px;
-                margin-top: 45px; 
-                background-color: ; 
-                border-top-left-radius: 500px;
-                border-top-right-radius: 500px;
-                border-bottom-right-radius: 20px;
-                border-bottom-left-radius: 20px;
-                margin-left: 27%;
-
-                }
-
-                #carrusel-comentario-conductor{
-                    width: 660px;
-                    height: 250px;
-                    background-color: #f5f4f4;
-                    margin-top: -20%;
-                    margin-left: 52%;
-                    position: absolute;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                    border-bottom-right-radius: 20px;
-                    border-bottom-left-radius: 20px;
-                    box-shadow: -10px -10px #e8e8e8; /* Relieve de contendor */
-                }
-
-
-
-                #carrusel-comentario-conductor-1{
-                    width: 600px;
-                    height: 200px;
-                    background-color: ;
-                    margin-top: 30px;
-                    margin-left: 30px;
-                    position: ;
-                }
-
-
-                #carrusel-comentario-conductor-2{
-                    width: 670px;
-                    height: 250px;
-                    background-color: #f5f4f4;
-                    margin-top: -15%;
-                    margin-left: 55%;
-                    position: absolute;
-                    box-shadow: -10px -10px #e8e8e8; /* Relieve de contendor */
-                }
-
-
-                #carrusel-comentario-conductor-3{
-                    width: 600px;
-                    height: 200px;
-                    background-color: #f5f4f4;
-                    margin-top: 15px;
-                    margin-left: 30px;
-                    position: absolute;
-                    
-                }
-
-                .carousel-item{
-                    background-color:rgb(207, 207, 207);
-                    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0)),
-                    url("/img/fondos/1.png");
-                    background-repeat: no-repeat; /*Caracteristica que permite de la foto no se cargue en mosaico*/
-                    background-size: cover; /*Caracteristica que cubre todo el contenedor*/
-                    margin-left: -1px;
-                    margin-top: 6.8%; 
-                    height: 780px;
-                }
-
-                #carrusel-comentario-relieve{
-
-                }
-
-                .carousel-control-prev{
-                    margin-top: 100px;
-                }
-
-                /**fin configuracion de carrusel*/
-                #table-contacto{
-                    width: 80%;
-                    background-color: ;
-                }
-
-                #table-3{
-                    background-color: blue;
-                }
-
-
-                #container-contacto{
-                    background-color: ;
-                    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.59)),
-                    url("/img/fondos/2.jpg");
-                    background-size: cover;
-                    width: 100%;
-                    height: 900px;
-                    margin-top: -1.3%;
-                }
-
-                #container-contacto-1{
-                    background-color: ;
-                    width: 60%;
-                    margin-top: -40%;
-                    margin-left: 25%;
-                    
-       
-                }
-
-                #txt-contacto{
-                   margin-left: 35%;
-                }
-
-
-                /*/
-                Inicio Estilos de contactenos
-                */
-
-                #contenedor-informacion{
-                    background-color: ; 
-                    height: 210px;
-                    margin-top: 3%
-
-                }
-
-                #div-contactenos{
-                    background-color: ;
-                    width: 10%;
-                    margin-left: 45%;
-                    margin-top: -40%;
-                
-                }
-
-                #div-direccion{
-                    background-color: ;
-                    width: 10%;
-                    margin-left: 31%;
-                    margin-top: -20px;
-
-                }
-
-                #div-telefono{
-                    background-color: ;
-                    width: 10%;
-                    margin-left: 44.3%;
-                    margin-top: -6.3%;
-                    
-
-
-                }
-                
-                #div-horario{
-                    background-color: ;
-                    width: 15%;
-                    margin-left: 58%;
-                    margin-top: -6.5%;                  
-                    
-                }
-
-                #maps{
-                    margin-left: 26%;
-                    margin-top: -3%;
-                }
-
-                /*/Fin Estilos de contactenos*/
-
-
-
-                @font-face {
-                font-family: 'Avenir';
-                src: url('fonts/Avenir-Light.woff2') format('woff2'),
-                    url('fonts/Avenir-Light.woff') format('woff');
-                font-weight: 300; /* Light weight */
-                font-style: normal;
-                }
-
-                body {
-                    font-family: Brandon grostesque, serif;
-                    font-weight: 300; /* Light weight */
-                }
-
-
-
-
-            
-
-
-            @media (min-width: 1400px) and (max-width: 1676px) {
-                #container_1{
-                    background-color: ;
-                    color: red;
-                }
-
-                #contenedor-texto-1{ /* Nombre Cootragal */ 
-                    margin-top: -50%;
-                    margin-left: -10%;
-                    width: auto;
-                } 
-
-                #contenedor-texto-2 { /* Nombre Cooperativa De transportadores De Galapa */ 
-                    font-size: 2vw;
-                    width:85%; 
-                    background-color: ;
-                    margin-left: -10%;
-
-                }
-
-                #logo-potada-text{ 
-                    width: 14%;
-                    margin-left: 29%;
-                    margin-top: -0%;
-
-                }
-
-                #img-portada{
-                    height: 10%;
-                }
-
-
-
-            }
-
-
-                
-        </style>
     </head>
     <body class="antialiased">              
 
@@ -768,9 +94,10 @@
         </nav>
         <br><br><br>
 
-        <div class="container-fluid" id="container-inicio">
-            <img id="img-logo-1" src="img/logos-botones/5.png" alt="">
+        <div class="container-fluid d-flex justify-content-center align-items-center" id="container-inicio">
 
+            <img id="img-logo-1" src="img/logos-botones/5.png" class="" alt="Imagen-portada-empresa">
+  
         
         <!--inicio de animacion portada -->
         
@@ -796,7 +123,7 @@
         <use xlink:href="#gentle-wave" x="50" y="0" fill="#bcbcc4"/> amarilo
             </g>
             <g class="parallax3">
-        <use xlink:href="#gentle-wave" x="50" y="9" fill="#f0f0f0"/> AZUL
+        <use xlink:href="#gentle-wave" x="50" y="9" fill="#fffefe"/> AZUL
         </g>
             <g class="parallax4">
         <use xlink:href="#gentle-wave" x="50" y="56" fill="#dddddd"/>  morado
@@ -806,223 +133,168 @@
         <!--fin de animacion portada -->
 
         </div>
-        <div class="cont-img" id="container-operaciones">
-
-        <table border="0" id="tabla-1">
-            <tr>
-                <td>
-                <button id="btn-control-seleecion" class="btn btn-light" type="button">
-                
-                    <h4>¿Quienes somos?</h4>
-                    <img id="logo-1" src="img/logos-botones/1.png" alt="">
-                    <br>
-                    <div class="btn btn-secondary">Ver más</div>
-             
-                </button>
-                </td>
-            
-                <td>
-                    <button id="btn-control-seleecion" class="btn btn-light" type="button">
-                                
-                        <h4>La Cooperativa</h4>
-                        <img id="logo-2" src="img/logos-botones/2.png" alt="La Cooperativa">
-                        <div class="btn btn-secondary">Ver más</div>
-                    </button>
-
-                </td>
-
-                <td>
-
-                    <button id="btn-control-seleecion" class="btn btn-light" type="button">
-                        <h4>Operaciones</h4>
-                        
-                        <img id="logo-3" src="img/logos-botones/3.png" alt="Operaciones">
-                        <br>
-                        <br>
-                        <div class="btn btn-secondary">Ver más</div>
-                    </button>
-
-                </td>
-
-                <td>
-
-                    <button id="btn-control-seleecion" class="btn btn-light" type="button">
-                                
-                        <h4>Contrato</h4>
-                        <img id="logo-4" src="img/logos-botones/4.png" alt="">
-                        <br>
-                        <br>
-                        <div class="btn btn-secondary">Ver más</div>
-                    </button>
-
-
-                </td>
-            </tr>
-        </table>
-    </div>
 
 
     <div id="container_1" class="mx-auto col-md-8 col-lg-6 order-lg-last">
 
-                <div class="text-align-left" id="contenedor-texto-1">
+            <div class="text-align-left" id="contenedor-texto-1">
 
-                    <h1 id="txt_titulo" class="h1">COOTRAGAL</h1>
+                <h1 id="txt_titulo" class="h1">COOTRAGAL</h1>
 
-                </div>
+            </div>
 
             <div class="text-align-left" id="contenedor-texto-2">
 
-                    <h3 id="txt_subtitulo" class="h2">Cooperativa De Transportadores De Galapa.</h3>
+                <h3 id="txt_subtitulo" class="h2">Cooperativa De Transportadores De Galapa.</h3>
             </div>
 
-            <div class="logo" id="contenedor-texto-3">
-                    <img id="logo-potada-text" src="\img\logo-borde-blanco.png" alt="">
-            
-            </div>
 
     </div>
+   
 
-        <div id="grad">
-                <h2></h2>
+    <div class="container text-center mt-4" id="container-operaciones">
+     <div class="row g-4">
+             <div class="col-6 col-md-6 col-lg-3">
+                <button class="btn w-100 p-2 d-flex flex-column align-items-center" id="btn-operaciones">
+                    <h4>¿Quiénes somos?</h4>
+                    <img src="img/logos-botones/1.gif" class="img-fluid" id="img-logo-operaciones" alt="Logo 1">
+                    <div class="btn btn-secondary mt-2">Ver más</div>
+                </button>
+            </div>
+
+
+            <div class="col-6 col-md-6 col-lg-3">
+                <button class="btn w-100 p-2 d-flex flex-column align-items-center" id="btn-operaciones">
+                    <h4>La Cooperativa</h4>
+                    <img src="img/logos-botones/2.gif" class="img-fluid"  id="img-logo-operaciones" alt="La Cooperativa">
+                    <div class="btn btn-secondary mt-2">Ver más</div>
+                </button>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3">
+                <button class="btn w-100 p-2 d-flex flex-column align-items-center" id="btn-operaciones">
+                    <h4>Operaciones</h4>
+                    <img src="img/logos-botones/3.gif" class="img-fluid" id="img-logo-operaciones" alt="Operaciones">
+                    <div class="btn btn-secondary mt-2">Ver más</div>
+                </button>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3">
+                <button class="btn w-100 p-2 d-flex flex-column align-items-center" id="btn-operaciones">
+                    <h4>Contrato</h4>
+                    <img src="img/logos-botones/4.gif" class="img-fluid"  id="img-logo-operaciones" alt="Contrato">
+                    <div class="btn btn-secondary mt-2">Ver más</div>
+                </button>
+            </div>
         </div>
-           
-        <div class="cont-img-servicios" id="container-servicios">
-      
+    </div>
+
+
+<!-- ARREGLO DE DIV -->
+<div class="container-fluid" id="container-servicios-1">
+    <div class="container text-center py-5" id="container-servicios">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container" id="txt-servicios">
+                    <h2 class="fw-bold">Servicios</h2>
+                    <p class="lead">
+                        Nuestra empresa cuenta con una gama de servicios diseñados para ofrecer un transporte público de 
+                        calidad y confiable. Nos enfocamos en garantizar la puntualidad, la seguridad y la comodidad de 
+                        nuestros usuarios en todo momento. Además, estamos comprometidos con la innovación y la mejora 
+                        continua, utilizando tecnologías avanzadas y vehículos modernos para asegurar que cada viaje sea 
+                        una experiencia positiva.
+                    </p>
+                </div>
+            </div>
             
-
+            <div class="col-md-6">
+                <div class="row justify-content-center gap-1 mt-3" id="row-btn-servicios">
+                    <!-- Servicio 1 -->
+                    <div class="col-3 col-sm-4 col-md-6 col-lg-3">
+                        <button class="btn w-100 p-2 d-flex flex-column align-items-center" id="btn-servicios">
+                            <img src="img/logos-botones/6.png" id="img-logo-servicios" class="img-fluid" alt="Viajes Expreso">
+                            <h5>Viajes Expreso</h5>
+                            <div class="btn btn-secondary mt-2">Ver más</div>
+                        </button>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="col-3 col-sm-4 col-md-6 col-lg-3">
+                        <button class="btn w-100 p-2 d-flex flex-column align-items-center" id="btn-servicios">
+                            <img src="img/logos-botones/7.png" id="img-logo-servicios" class="img-fluid" alt="Rutas activas">
+                            <h5>Rutas activas</h5>
+                            <div class="btn btn-secondary mt-2">Ver más</div>
+                        </button>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="col-3 col-sm-4 col-md-6 col-lg-3">
+                        <button class="btn w-100 p-2 d-flex flex-column align-items-center" id="btn-servicios">
+                            <img src="img/logos-botones/8.png" id="img-logo-servicios" class="img-fluid" alt="Estación de servicio">
+                            <h5>Estación de servicio</h5>
+                            <div class="btn btn-secondary mt-2">Ver más</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</div>
 
-        <div class="container" id="txt-servicios">
-            <span>Servicios</span>
+  
 
-        </div>
+    <!-- DIV CARRUSEL START -->
 
-        <div class="container" id="container-descrip-servicios">
-            <span>"Nuestra empresa cuenta con una gama de servicios diseñados para ofrecer un transporte público de 
-                calidad y confiable. Nos enfocamos en garantizar la puntualidad, la seguridad y la comodidad de 
-                nuestros usuarios en todo momento. Además, estamos comprometidos con la innovación y la mejora 
-                continua, utilizando tecnologías avanzadas y vehículos modernos para asegurar que cada viaje sea 
-                una experiencia positiva. Nuestro objetivo es contribuir al bienestar de la comunidad y ofrecer 
-                soluciones de movilidad eficientes y accesibles para todos."</span>
-
-        </div>
-
-            <table id="tabla-servicios-1">
-                <tbody>
-                    <tr>
-                        <td>
-                            <button id="btn-servicios" type="button" class="btn btn-light">
-                                <img id="logo-5" src="img/logos-botones/6.png" alt="">
-                                <br>
-                                <h5>Viajes Ocasionales</h5>
-                                <div class="btn btn-success">Ver más</div>                               
-                            </button>
-                        </td>
-                        <br>
-
-                        <td>
-                            <button id="btn-servicios" type="button" class="btn btn-light">
-                                <img id="logo-5" src="img/logos-botones/7.png" alt="">
-                                <br>
-                                <h5>Rutas Actuales</h5>
-                                <div class="btn btn-success">Ver más</div>                           
-                            </button>
-                        </td>
-
-                        <td>
-                            <button id="btn-servicios" type="button" class="btn btn-light">
-                                <img id="logo-5" src="img/logos-botones/8.png" alt="">
-                                <br>
-                                <h5>EDS</h5>
-                                <div class="btn btn-success">Ver más</div>
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-
-        <!-- DIV CARRUSEL START -->
-
-            <!-- Carousel -->
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
+<div class="container-fluid">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- Indicators -->
+        <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div>
+        </div>
 
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
+        <!-- Carousel content -->
+        <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/banner/3.jpg" id="img-carrusel-1" alt="Los Angeles" class="d-block" style="width:100%">
-                <div id="carrusel-comentario-conductor-2">
-                    <div id="carrusel-comentario-conductor-3">
-                        <h4 >"Contamos con conductores altamente calificados, comprometidos con ofrecer una conducción segura, 
-                            confiable y eficiente. Su profesionalismo y experiencia garantizan un servicio de calidad, 
-                            permitiéndonos transportar a nuestros usuarios con total comodidad, puntualidad y confianza."
-                            
-                        </h4>
-                        _____
-
-                        <h5 style="font-weight: bold;">
-                        Amin Nazzer. Gerente.
-                        </h5>
-                    </div>
-      
+                <img src="img/banner/3.jpg" id="img-carrusel-1" class="img-fluid" alt="">
+                <div class="text-center p-4" id="carrusel-comentario-gerente">
+                    <h4>"Contamos con un equipo de conductores altamente capacitados, comprometidos con su seguridad y 
+                        bienestar. Asegurando un transporte confiable, cómodo y seguro para ustedes. ¡Gracias por confiar en nosotros!"</h4>
+                    <h5><strong>Amin Nazzer. Gerente.</strong></h5>
                 </div>
             </div>
-            
 
             <div class="carousel-item">
-                <img src="img/banner/4.jpg" id="img-carrusel-2" alt="Chicago" class="d-block">
-                <div id="carrusel-comentario-conductor">
-                    <div id="carrusel-comentario-conductor-1">
-                        <h4 >"Con más de 13 años al volante, agradezco a la cooperativa por su confianza y apoyo durante todo este tiempo. 
-                                Ha sido un honor contribuir a un transporte seguro y confiable para todos nuestros pasajeros."
-                            
-                        </h4>
-                        _____
-
-                        <h5 style="font-weight: bold;">
-                        Félix Gutiérrez. Conductor
-                        </h5>
-                    </div>
-      
-                </div>
-            </div>
-                <div class="carousel-item">
-                    <img src="img/banner/5.jpg" id="img-carrusel-2" alt="New York" class="d-block" >
-                        <div id="carrusel-comentario-conductor">
-                        <div id="carrusel-comentario-conductor-1">
-                            <h4 >"Valoro enormemente la cooperativa de transporte por haberme brindado la oportunidad de crecer como conductor y profesional. 
-                                Su apoyo ha sido clave para mejorar y ofrecer un servicio de calidad a los pasajeros. 
-                                Me siento orgulloso de ser parte de este equipo."
-                                
-                            </h4>
-                            _____
-
-                            <h5 style="font-weight: bold;">
-                            Robinson Jr. Ojeda. Conductor
-                            </h5>
-                        </div>
-        
-                    </div>
-                    
+                <img src="img/banner/4.jpg" id="img-carrusel-2" class="img-fluid" alt="">
+                <div class="text-center p-4" id="carrusel-comentario-conductor-1">
+                    <h4>"Con más de 13 años al volante, puedo afirmar que ofrecemos un servicio de transporte seguro 
+                        y confiable, siempre comprometidos con la excelencia."</h4>
+                    <h5><strong>Félix Gutiérrez, Conductor.</strong></h5>
                 </div>
             </div>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <div class="carousel-item">
+                <img src="img/banner/5.jpg" id="img-carrusel-2" class="img-fluid" alt="">
+                <div class="text-center p-4" id="carrusel-comentario-conductor-1">
+                    <h4>"Gracias al respaldo de la cooperativa, he podido crecer como conductor y mejorar 
+                        constantemente para brindar el mejor servicio a nuestros pasajeros. Mi 
+                        compromiso es garantizar un viaje seguro, cómodo y confiable para quienes confían 
+                        en nosotros."</h4>
+                    <h5><strong>Robinson Jr. Ojeda. Conductor.</strong></h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
-            </button>
-            </div>
+        </button>
+
+    </div>
+</div>
 
 
         <!-- DIV CARRUSEL END -->
