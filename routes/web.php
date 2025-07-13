@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\NovedadesCamarasController;
 use App\Http\Controllers\LiquidadorController;
 use App\Http\Controllers\CamarasTaskController;
+use App\Http\Controllers\GestionController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -38,6 +40,11 @@ Route::get('/detalle/{id}', [NovedadesCamarasController::class, 'detalle'])->nam
 Route::get('/delete/{id}', [NovedadesCamarasController::class, 'delete'])->name('eliminar.delete');
 Route::get('Liquidador/index', [LiquidadorController::class, 'index'])->name('Liquidador');
 Route::get('CamarasTask/index', [CamarasTaskController::class, 'index'])->name('CamarasTask.index');
+
+Route::get('cooperativa/gestion', [GestionController::class, 'gestion'])->name('gestion.index');
+
+
+
 Route::get('CamarasTask/store/{id}', [CamarasTaskController::class, 'store'])->name('CamarasTask.store');
 Route::get('CamarasTask/update/{id}', [CamarasTaskController::class, 'update'])->name('task.update');
 Route::post('CamarasTask/store/', [CamarasTaskController::class, 'store'])->name('createtaskdone.store');

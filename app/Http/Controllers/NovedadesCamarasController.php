@@ -17,8 +17,15 @@ class NovedadesCamarasController extends Controller
     {
         //$datos es una variable que se toma para usar el modelo de novedades camaras para traer los datos de mysql, EL MODELO DEBE DE LLAMRSE IGUAL QUE LA TABLA
         //Luego $datos lo puedes usar en cualquier balde.php, usando el compact
-        $datos = DB::select('select * from novedad_camaras where tipo = "M"');
+        $datos = DB::table('novedad_camaras')
+            ->where('tipo', 'M') // Aplicar filtro
+            ->orderBy('ID', 'DESC') // Ordenar por fecha de creación, descendente
+            ->paginate(5); // Paginar con 15 resultados por página
+
         return view('Camaras/1_camaras', compact('datos'));
+
+
+
     }
 
     /**
@@ -42,7 +49,8 @@ class NovedadesCamarasController extends Controller
         $novedad_camaras->observaciones=$request->post('observaciones');
         $novedad_camaras->detalle_actividad=$request->post('detalle_actividad');
         $novedad_camaras->tipo=$request->post('tipo');
-        $novedad_camaras->responsable_actividad=$request->post('user_responsable');
+        $novedad_camaras->creador_tarea=$request->post('creador_tarea');
+        $novedad_camaras->responsable_tarea=$request->post('responsable_tarea');
         $novedad_camaras->circuito=$request->post('circuito');
         $novedad_camaras->memoria=$request->post('memoria');
         $novedad_camaras->camara=$request->post('camara');
@@ -75,6 +83,8 @@ class NovedadesCamarasController extends Controller
     public function edit($id)
     {
         $novedad_camaras = novedad_camaras::find($id);
+        $user = auth()->user();
+        $novedad_camaras->responsable_tarea = $user->name;
         return view("Camaras/3_editar_novedad", compact('novedad_camaras'));
         //return view ('Camaras/3_editar_novedad');
     }
@@ -90,7 +100,9 @@ class NovedadesCamarasController extends Controller
         $novedad_camaras->conductor=$request->post('conductor');
         $novedad_camaras->detalle_actividad=$request->post('detalle_actividad');
         $novedad_camaras->tipo=$request->post('tipo');
-        $novedad_camaras->responsable_actividad=$request->post('user_responsable');
+        $novedad_camaras->creador_tarea=$request->post('creador_tarea');
+        $user = auth()->user();
+        $novedad_camaras->responsable_tarea = $user->name;
         $novedad_camaras->fecha_realizado=$request->post('date_activi');
         $novedad_camaras->circuito=$request->post('circuito');
         $novedad_camaras->memoria=$request->post('memoria');

@@ -1,0 +1,22 @@
+
+#inversion-1 {
+    background-color: #757575;
+    margin-top: 4.2%;
+    height: 400px;
+
+}
+
+#inversion-1 h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-right: 65%;
+    margin-top: 8%;
+}
+
+#inversion-1 .container {
+    color: #ffffff;
+    font-size: 19px;
+    margin-left: 33%;
+    margin-top: -6%;
+    width: 48%;
+}

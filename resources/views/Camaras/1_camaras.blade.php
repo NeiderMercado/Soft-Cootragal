@@ -78,18 +78,18 @@
         <thead class="table-dark">
             <tr>
             <th>ID</th>
-            <th>INTERNO - PLACA</th>
+            <th>INTERNO</th>
             <th>CONDUCTOR</th>
             <th>ACTIVIDAD</th>
             <th>SOPORTES</th>
-            <th>USUARIO</th>
+            <th>RESPONSABLE</th>
             <th>FECHA</th>
             <th>OPCIÓN</th>
 
 
             </tr>
         </thead>
-        <tbody>
+        <tbody id="myTable">
             @foreach ($datos as $consulta1)
                 <tr>
                     <td>{{ $consulta1->id }}</td>
@@ -97,14 +97,14 @@
                     <td>{{ $consulta1->conductor }}</td>
                     <td>{{ $consulta1->actividad }}</td>
                     <td>{{ $consulta1->soportes }}</td>
-                    <td>{{ $consulta1->responsable_actividad }}</td>
+                    <td>{{ $consulta1->responsable_tarea }}</td>
                     <td>{{ $consulta1->created_at }}</td>
                     <td>
                         
                 <form action="{{ route('eliminar.delete', $consulta1->id)}}" onsubmit="confirmarEliminacion(event)"  method="get" id="{{ $consulta1->id }}" >
-
+                        
                         <a href="{{ route('detalle.detalle', $consulta1->id)}}" type="submit" class="btn btn-info"><i class="bi bi-eye-fill"></i></a>
-
+                        
                         <a href="{{ route('editar.edit', $consulta1->id)}}" type="submit" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
                 
                         @csrf
@@ -113,9 +113,27 @@
 
                 </form>
 
-                
-                    <!-- SCRIPT -->
-                    <script>
+                </td>
+ 
+
+                </tr>
+
+            @endforeach
+
+        </tbody>
+        </table>
+
+        <br>
+        {{ $datos->links() }}
+
+
+    </div>
+
+    </body>  
+
+                     <!-- SCRIPT -->
+                     <script>
+                    
                         document.querySelectorAll('.btn-delete').forEach(button => {
                             button.addEventListener('click', function() {
                                 const form = this.closest('form');
@@ -126,7 +144,7 @@
                                     text: "¡No podrás revertir esto!",
                                     icon: 'warning',
                                     showCancelButton: true,
-                                    confirmButtonColor: '#3085d6',
+                                    confirmButtonColor: '#ff0000',
                                     cancelButtonColor: '#d33',
                                     confirmButtonText: 'Sí, eliminarlo!',
                                     cancelButtonText: 'Cancelar'
@@ -138,34 +156,30 @@
                                 });
                             });
                         });
+
+                
+                        $(document).ready(function(){
+                        $("#myInput").on("keyup", function() {
+                            var value = $(this).val().toLowerCase();
+                            $("#myTable tr").filter(function() {
+                            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                            });
+                        });
+                        });
+
                     </script>
-
-
-                    </td>
- 
-
-                </tr>
-
-            @endforeach
-
-        </tbody>
-        </table>
-
-        <br>
-        
-
-
-
-
-
-    </div>
-
-    </body>  
 
         <!-- CSS -->
         <style> 
 
+                .swal2-confirm {
+                    background-image: linear-gradient(#dc3545, #dc3545);
+                }
 
+                .swal2-cancel {
+                    background-image: linear-gradient(#198754, #198754);
+                    
+                }
                 
                 #table{
                     text-align: center;

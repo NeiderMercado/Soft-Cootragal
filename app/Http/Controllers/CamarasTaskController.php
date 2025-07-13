@@ -13,7 +13,12 @@ class CamarasTaskController extends Controller
 {
     public function index()
     {
-        $task_done = DB::select('select * from novedad_camaras where estado = "Realizado"');
+
+        $task_done = DB::table('novedad_camaras')
+        ->where('estado', 'Realizado') // Aplicar filtro
+        ->orderBy('ID', 'DESC') // Ordenar por fecha de creación, descendente
+        ->paginate(5); // Paginar con 15 resultados por página
+
         $task_pending = DB::select('select * from novedad_camaras where estado = "Pendiente"');
         $task_new = DB::select('select * from novedad_camaras WHERE fecha_novedad BETWEEN CURRENT_DATE-2 AND CURRENT_DATE AND estado = "Pendiente"');
         $task_dead = DB::select('select * from novedad_camaras WHERE fecha_novedad <= CURRENT_DATE-8 AND CURRENT_DATE AND estado = "Pendiente"');        
@@ -36,7 +41,7 @@ class CamarasTaskController extends Controller
         $novedad_camaras->observaciones=$request->post('observaciones');
         $novedad_camaras->detalle_actividad=$request->post('detalle_actividad');
         $novedad_camaras->tipo=$request->post('tipo');
-        $novedad_camaras->responsable_actividad=$request->post('user_responsable');
+        $novedad_camaras->creador_tarea=$request->post('creador_tarea');
         $novedad_camaras->circuito=$request->post('circuito');
         $novedad_camaras->memoria=$request->post('memoria');
         $novedad_camaras->camara=$request->post('camara');
@@ -83,7 +88,10 @@ class CamarasTaskController extends Controller
     public function update(Request $request, $id)
     {
         $update_task = novedad_camaras::find($id);
-        $update_task->estado = 'Realizado';
+        $user = auth()->user();
+        $update_task->responsable_tarea = $user->name;
+        $update_task->detalle_actividad = 'Se realiza conteo de pasajeros manualmente'; 
+        $update_task->estado = 'Realizado'; 
         $update_task->save();
         
         return redirect()->route('CamarasTask.index')->with("tarea_realizada", " La tarea fué REALIZADA con éxito.");

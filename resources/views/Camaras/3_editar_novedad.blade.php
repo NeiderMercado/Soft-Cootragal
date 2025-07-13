@@ -13,8 +13,16 @@
 <body>
 
 <!--<h2>Su ID de consulta es: {{ $novedad_camaras }}</h2>-->
+
+
 <div class="container p-4 mb-2 bg-white text-dark">
 <h2 id="titulos">EDITAR O ACTUALIZA REVISIÓN/NOVEDAD</h2>
+<br>
+<br>
+
+        <div class="parent">
+
+                <div class="div1">
 
                 <form id="app" method="post" action="{{ route('prueba.update', $novedad_camaras->id)}}">
 
@@ -45,6 +53,9 @@
                             <textarea class="form-control" name="detalle_actividad" id="exampleFormControlTextarea1" value="{{ $novedad_camaras->detalle_actividad}}" rows="3" required>{{ $novedad_camaras->detalle_actividad}}</textarea>
                         </div>
 
+        </div>
+        <div class="div2">
+
                         <table class="table table-bordered border-primary" id="table-element">
                             <thead class="table-dark">
                                 <tr>
@@ -74,20 +85,19 @@
 
                                 </tr>
                             </tbody>
-
+                        
                         </table>
+                        
+        </div>
+                        <div class="form-group" id="">
+                            <label for="">Soportes</label>
+                            <br> 
+                            <input type="file" class="btn btn-primary" id="form-soporte" name="soporte" value="{{ $novedad_camaras->cable}}" required>
+                        </div>
+    </div>
 
                         <br>
 
-                        <div class="form-group">
-                            <label for="">Soportes</label>
-                            <br> 
-                            <input type="file" id="form-soporte" name="soporte" value="{{ $novedad_camaras->cable}}" required>
-                        </div>
-
-                        <div class="form-group">
-                            <span value="usuario_creador_novedad"></span>
-                        </div>
 
                         <div class="form-group">
                              <input type="hidden" name="user_responsable" value="<?php $usuario = Auth::user()->name; echo($usuario); ?>">
@@ -98,11 +108,12 @@
                     <br>
                     <div class="" id="div_botones">
 
-                        <a href="{{ route('1_camaras.index')}}" class="btn btn-danger"><i class="bi bi-x-circle"></i> CANCELAR</a>
                         <button type="submit" class="btn btn-success">
                             <i class="bi bi-floppy">
                             <a id="btn-save-modal"></i> GUARDAR</a>
                         </button>
+                        <a href="{{ route('1_camaras.index')}}" class="btn btn-danger"><i class="bi bi-x-circle"></i> CANCELAR</a>
+
 
                     </div>
 
@@ -122,9 +133,33 @@
 
         <!-- CSS -->
         <style> 
-                 #table-element{
+                .parent {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
 
-                width: 400px;
+                    
+                .div1 {
+                    grid-row: span 2 / span 2;
+                    background-color: ;
+                    width: 50%;
+
+
+                }
+
+                .div2 {
+                    grid-row: span 2 / span 2;
+                    background-color: ;
+
+                }
+
+                
+
+                #table-element{
+                    width: 400px;
+                    margin-top: 30px;
+                    margin-left: 30px;
                 }
 
                 #div_botones{

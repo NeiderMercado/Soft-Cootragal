@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('observaciones')->nullable();
             $table->string('tipo');
             $table->string('detalle_actividad')->nullable();
-            $table->string('responsable_actividad')->nullable();
+            $table->string('creador_tarea')->nullable();
             $table->string('responsable_tarea')->nullable();
             $table->Date('fecha_realizado')->nullable();
             $table->string('circuito')->nullable();
