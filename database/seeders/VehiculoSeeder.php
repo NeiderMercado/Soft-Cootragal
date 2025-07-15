@@ -1,0 +1,103 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class VehiculoSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+            DB::table('vehiculo')->insert([
+            ['interno' => '1 - WEO675'],
+            ['interno' => '2 - SMG895'],
+            ['interno' => '3 - STS565'],
+            ['interno' => '4 - STS446'],
+            ['interno' => '5 - SMG992'],
+            ['interno' => '6 - WGV021'],
+            ['interno' => '7 - SMG813'],
+            ['interno' => '8 - SMG868'],
+            ['interno' => '9 - STS417'],
+            ['interno' => '10 - STS415'],
+            ['interno' => '11 - WEO121'],
+            ['interno' => '12 - WEM332'],
+            ['interno' => '13 - SMG887'],
+            ['interno' => '14 - SMG885'],
+            ['interno' => '15 - STS439'],
+            ['interno' => '16 - STS050'],
+            ['interno' => '17 - SMG891'],
+            ['interno' => '18 - STS449'],
+            ['interno' => '19 - WGW328'],
+            ['interno' => '20 - WOP241'],
+            ['interno' => '21 - SMG900'],
+            ['interno' => '22 - TDU881'],
+            ['interno' => '23 - WEO725'],       
+            ['interno' => '24 - STS323'],
+            ['interno' => '25 - STR693'],
+            ['interno' => '26 - WEO678'],
+            ['interno' => '27 - STS680'],
+            ['interno' => '28 - WOV946'],
+            ['interno' => '29 - SMG892'],
+            ['interno' => '30 - WEO139'],
+            ['interno' => '31 - WEO140'],
+            ['interno' => '32 - WEO141'],
+            ['interno' => '33 - WEO142'],
+            ['interno' => '34 - WEO143'],
+            ['interno' => '35 - WEO144'],
+            ['interno' => '36 - WEO145'],
+            ['interno' => '37 - WEO146'],
+            ['interno' => '38 - WEO147'],
+            ['interno' => '39 - WEO148'],
+            ['interno' => '40 - WEO149'],
+            ['interno' => '41 - WEO150'],
+            ['interno' => '42 - WEO151'],
+            ['interno' => '43 - WEO152'],
+            ['interno' => '44 - WEO153'],
+            ['interno' => '45 - WEO154'],
+            ['interno' => '46 - WEO155'],
+            ['interno' => '47 - WEO156'],
+            ['interno' => '48 - WEO157'],
+            ['interno' => '49 - WEO158'],
+            ['interno' => '50 - WEO159'],
+            ['interno' => '51 - WEO160'],
+            ['interno' => '52 - WEO161'],
+            ['interno' => '53 - WEO162'],
+            ['interno' => '54 - WEO163'],
+            ['interno' => '55 - WEO164'],
+            ['interno' => '56 - WEO165'],
+            ['interno' => '57 - WEO166'],
+            ['interno' => '58 - WEO167'],
+            ['interno' => '59 - WEO168'],
+            ['interno' => '60 - WEO169'],
+            ['interno' => '61 - WEO170'],
+            ['interno' => '62 - WEO171'],
+            ['interno' => '63 - WEO172'],
+            ['interno' => '64 - WEO173'],
+            ['interno' => '65 - WEO174'],
+            ['interno' => '66 - WEO175'],
+            ['interno' => '67 - WEO176'],
+            ['interno' => '68 - WEO177'],
+            ['interno' => '69 - WEO178'],
+            ['interno' => '70 - WEO179'],
+            ['interno' => '71 - WEO180'],
+            ['interno' => '72 - WEO181'],
+            ['interno' => '73 - WEO182'],
+            ['interno' => '74 - WEO183'],
+            ['interno' => '75 - WEO184'],
+            ['interno' => '76 - WEO185'],
+            ['interno' => '77 - WEO186'],
+            ['interno' => '78 - WEO187'],
+            ['interno' => '79 - WEO188'],
+            ['interno' => '80 - WEO189'],
+            ['interno' => '81 - WEO190'],
+            ['interno' => '82 - WEO191'],
+            ['interno' => '83 - WEO192'],
+            ['interno' => '84 - WEO193'],
+    ]);
+    }
+}

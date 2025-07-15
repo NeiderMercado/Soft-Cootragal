@@ -68,7 +68,55 @@
         @endif
 
 <a href="{{ route('2_crear_novedad.create') }}"  class="btn btn-primary"><i class="bi bi-file-earmark-plus-fill"></i> AGREGAR</a>
-<a href="{{ route('CamarasTask.index') }}"  class="btn btn-success"><i class="bi bi-file-earmark-plus-fill"></i> CENTRO DE TAREAS</a>
+<a href="{{ route('CamarasTask.index') }}"  class="btn btn-success"><i class="bi bi-bar-chart-fill"></i> CENTRO DE TAREAS</a>
+
+
+        <!-- Button trigger modal -->
+        <a href="{{ route('CamarasTask.index') }}"  class="btn btn-info" data-toggle="modal" data-target="#exampleModal"><i class="bi bi-arrow-bar-down"></i> REPORTES</a>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Panel de reportes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label for="inputEmail4">Interno</label>
+                    <select class="form-control" name="int-placa" id="inputEmail4">
+                        @foreach($datos as $item)
+                            <option value="{{ $item->interno }}">{{ $item->interno }}</option>
+                        @endforeach
+                    </select>
+
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Fecha inicio:</label>
+                    <input type="date" class="form-control" name="fecha-ini" value="">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Fecha fin:</label>
+                    <input type="date" class="form-control" name="fecha-fin" value="">
+                </div>
+            </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success">Generar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
 
 <br></br>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar Registros ...">
@@ -90,7 +138,7 @@
             </tr>
         </thead>
         <tbody id="myTable">
-            @foreach ($datos as $consulta1)
+        @foreach ($datos as $consulta1)    
                 <tr>
                     <td>{{ $consulta1->id }}</td>
                     <td>{{ $consulta1->interno }}</td>
